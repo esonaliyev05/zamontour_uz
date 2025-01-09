@@ -4,9 +4,9 @@ import Swiper from "../HeaderSwiper/Swiper"
 
 const Header = () => {
   return (
-    <div>
+    <header>
       <Swiper/>
-    </div>
+    </header>
   )
 }
 

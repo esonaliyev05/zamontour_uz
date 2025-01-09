@@ -6,7 +6,8 @@ nav {
   height: 70px;
   background: $bg-color;
   overflow: hidden;
-
+  position: fixed;
+  z-index: 9;
   .container {
     width: 1346px;
     height: 100%;
@@ -15,6 +16,7 @@ nav {
     align-items: center;
     margin: 0 auto;
     position: relative;
+    padding: 0 0 0 55px;
 
     .logo {
       width: 155px;

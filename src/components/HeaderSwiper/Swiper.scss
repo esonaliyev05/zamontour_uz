@@ -6,13 +6,14 @@ $text-color: #fff;
   height: 91vh;
   transition: all .2s linear !important;
   overflow: hidden;
-
+  top: 70px;
   .chiled-swiper {
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    //   margin-top: 70px;
 
     &:first-child {
       background: url(../../../public/Header/istanbul.jpg);

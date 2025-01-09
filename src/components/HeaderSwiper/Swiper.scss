@@ -204,7 +204,7 @@ $text-color: #fff;
             align-items: center;
             margin: 0 auto;
             flex-wrap: wrap;
-            padding: 20px ;
+            padding: 20px 0;
 
             .box {
               width: 40%;
@@ -225,6 +225,7 @@ $text-color: #fff;
               }
 
               .text {
+                width: auto;
                 p {
                   color: gray;
                   font-family: "Poppins", sans-serif;
@@ -239,7 +240,7 @@ $text-color: #fff;
             }
 
             button {
-              padding: 15px 30px;
+              padding: 15px 20px;
               border: none;
               background: $bg-color;
               color: white;

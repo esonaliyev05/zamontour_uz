@@ -204,10 +204,10 @@ $text-color: #fff;
             align-items: center;
             margin: 0 auto;
             flex-wrap: wrap;
-            padding: 20px 0;
+            padding: 10px 10px;
 
             .box {
-              width: 40%;
+              width: auto;
               display: flex;
               align-items: center;
               gap: 15px;
@@ -223,6 +223,7 @@ $text-color: #fff;
                 font-size: 20px;
                 color: $bg-color;
                 position: relative;
+
               }
 
               .text {

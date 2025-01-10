@@ -500,14 +500,14 @@ main{
                     .text-top{
                         width: 100%;
                         text-align: start;
-                        margin-bottom: 50px;
+                        margin-bottom: 10px;
     
                         h1{
                             width: 100%;
                             color: #2a2a2a;
                             font-family: $font;
                             text-transform: capitalize;
-                            margin: 25px 0;
+                            // margin: 25px 0;
                             font-size: 25px;
                         }
                         p{
@@ -521,7 +521,7 @@ main{
                     .countres-box{
                         width: 100%;
                         height: auto;
-                        margin: 50px 0;
+                        margin:  0;
                         display: flex;
                         justify-content: space-between;
                         flex-wrap: wrap;
@@ -533,7 +533,7 @@ main{
                             height: 220px;
                             border-radius: 16px;
                             // margin: 0 0 25px 0;
-                            margin: 0 auto;
+                            margin: 15px auto;
                         }
     
                         .text{

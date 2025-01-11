@@ -28,7 +28,7 @@ export default function App() {
             delay: 3500,
             disableOnInteraction: false,
           }}
-        loop={true}
+        // loop={true}
         modules={[EffectFade, Navigation, Pagination, Autoplay]}
         className="HeaderSwiper"
       >

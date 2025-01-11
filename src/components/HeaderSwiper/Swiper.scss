@@ -16,16 +16,12 @@ $text-color: #fff;
     //   margin-top: 70px;
 
     &:first-child {
-      background: url(../../../public/Header/istanbul.jpg);
-      background-repeat: no-repeat;
+      background: url(../../../public/Header/istanbul.jpg) center center no-repeat;
       background-size: cover;
-      background-position: center;
     }
     &:nth-child(2) {
-      background-repeat: no-repeat;
+      background: url(../../../public/Header/dubai2.jpg) center center no-repeat;
       background-size: cover;
-      background-position: center;
-      background: url(../../../public/Header/dubai2.jpg);
     }
     &:nth-child(3) {
       background: url(../../../public/Header/antalya2.jpg);
@@ -71,7 +67,7 @@ $text-color: #fff;
 
         button {
           padding: 15px 35px;
-          border-radius: 16px;
+          border-radius: 26px;
           background: $bg-color;
           border: none;
           color: white;
@@ -85,7 +81,7 @@ $text-color: #fff;
         height: 120px;
         background: white;
         border-radius: 46px;
-        margin: 25px 0;
+        margin: 90px 0 0 0;
 
         .boxses {
           width: 90%;
@@ -130,7 +126,7 @@ $text-color: #fff;
             border: none;
             background: $bg-color;
             color: white;
-            border-radius: 16px;
+            border-radius: 26px;
             font-family: "Poppins", sans-serif;
             font-size: 15px;
           }

@@ -1,0 +1,1210 @@
+$bg-color: #22b3c1;
+$text-color: #fff;
+$color: #2a2a2a;
+$font: "Poppins", sans-serif;
+
+.Concat{
+    width: 100%;
+    height: auto;
+
+    .concat-main{
+        width: 100%;
+        height: 600px;
+        background: url(../../../public/Select/heading-bg-02.jpg);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+
+        .concat-text{
+            width: 650px;
+            height: auto;
+            margin: 0 auto;
+            text-align: center;
+
+            p{
+                font-family: $font;
+                color: $text-color;
+                font-size: 26px;
+                font-weight: 600;
+                margin: 25px 0;
+
+
+            }
+
+            hr{
+                width: 150px;
+                margin: 0 auto;
+            }
+ 
+            h1{
+                color: $text-color;
+                font-family: $font;
+                font-size: 50px;
+                margin: 25px 0;
+
+            }
+
+            button{
+                padding: 15px 35px;
+                color: #22b3c1;
+                background: white;
+                border-radius: 26px;
+                font-family: $font;
+                border: none;
+                font-size: 16px;
+                font-weight: 600;
+                transition: all .2s linear;
+                cursor: pointer;
+
+                &:hover{
+                    background: #22b3c1;
+                    color: white;
+                }
+            }
+
+        }
+
+        .concat-box{
+            width: 100%;
+            height: auto;
+            display: flex;
+            position: absolute;
+            z-index: 2;
+            justify-content: center;
+            // align-items: ;
+            bottom: -100px;
+            gap: 50px;
+
+            .box{
+                width: 380px;
+                height: 190px;
+                background: white;
+                border-radius: 20px;
+                box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                .icon{
+                    width: 55px;
+                    height: 55px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #f0f0f0;
+                    color: #22b3c1;
+                    font-size: 25px;
+                }
+                
+              h3{
+                font-family: $font;
+                color: $color;
+                font-size: 20px;
+                margin: 10px 0;
+
+              }
+              p{
+                color: #22b3c1;
+                font-family: $font;
+                
+              }
+
+            }
+
+        }
+
+    }
+
+
+
+    .container{
+        width: 1200px;
+        height: auto;
+        margin: 0 auto;
+        // position: relative;
+        top: 160px;
+        background: #F9F9F9;
+        
+
+        .maps{
+            width: 100%;
+            height: 480px;
+
+            .map{
+                width: 100%;
+                height: 100%;
+                border-radius: 20px 20px 0 0;
+
+            }
+        }
+
+      .form-container{
+        width: 100%;
+        height: auto;
+        padding: 50px 0;
+        text-align: center;
+
+
+
+        h4{
+            font-family: $font;
+            color: #2a2a2a;
+            font-size: 35px;
+
+            em{
+                color: #22b3c1;
+
+            }
+
+        }
+
+        .form-parent{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            line-height: 40px;
+            gap: 50px;
+            margin-top: 50px;
+
+
+            .form{
+                width: 40%;
+                height: auto;
+                text-align: start;
+                display: flex;
+                flex-direction: column;
+
+                label{
+                    font-family: $font;
+                    color: gray;
+    
+                }
+    
+                input{
+                    width: 100%;
+                    height: 45px;
+                    border-radius: 16px;
+                    padding: 0 25px;
+                    outline: none;
+                    border: 1px solid gray;
+                    background: none;
+
+                }
+
+                select{
+                    width: 100%;
+                    height: 45px;
+                    border-radius: 16px;
+                    padding: 0 25px;
+                    outline: none;
+                    border: 1px solid gray;
+                }
+
+               
+
+            }
+            .form-btn{
+                width: 100%;
+
+                button{
+                    width: 85%;
+                    height: 45px;
+                    background: #22b3c1;
+                    color: white;
+                    font-family: $font;
+                    border: none;
+                    border-radius: 20px;
+                    font-size: 18px;
+
+                }
+            }
+        
+        }
+
+
+      }
+
+    }
+
+}
+@media screen and (max-width: 447px){
+    
+.Concat{
+    width: 100%;
+    height: auto;
+
+    .concat-main{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        margin: 25px 0;
+
+
+        .concat-text{
+            width: 100%;
+            height: auto;
+            margin: 40px  auto;
+            text-align: center;
+            
+
+            p{
+                font-family: $font;
+                color: $text-color;
+                font-size: 20px;
+                font-weight: 600;
+                margin: 25px 0;
+
+
+            }
+
+            hr{
+                width: 150px;
+                margin: 0 auto;
+            }
+ 
+            h1{
+                color: $text-color;
+                font-family: $font;
+                font-size: 30px;
+                margin: 25px 0;
+
+            }
+
+            button{
+                padding: 15px 35px;
+                color: #22b3c1;
+                background: white;
+                border-radius: 26px;
+                font-family: $font;
+                border: none;
+                font-size: 16px;
+                font-weight: 600;
+                transition: all .2s linear;
+                cursor: pointer;
+
+                &:hover{
+                    background: #22b3c1;
+                    color: white;
+                }
+            }
+
+        }
+
+        .concat-box{
+            width: 100%;
+            height: auto;
+            display: flex;
+            position: absolute;
+            z-index: 2;
+            justify-content: center;
+            flex-wrap: wrap;
+            // align-items: ;
+            bottom: -550px;
+            
+            gap: 20px;
+
+            .box{
+                width: 300px;
+                height: 190px;
+                background: white;
+                border-radius: 20px;
+                box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                .icon{
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #f0f0f0;
+                    color: #22b3c1;
+                    font-size: 20px;
+                }
+                
+              h3{
+                font-family: $font;
+                color: $color;
+                font-size: 20px;
+                margin: 10px 0;
+
+              }
+              p{
+                color: #22b3c1;
+                font-family: $font;
+                
+              }
+
+            }
+
+        }
+
+
+
+    }
+
+
+
+    .container{
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 650px;
+        // position: relative;
+        // top: 760px;
+        background: #F9F9F9;
+        
+
+        .maps{
+            width: 95%;
+            height: 400px;
+            margin: 0 auto;
+
+            .map{
+                width: 100%;
+                height: 100%;
+                border-radius: 20px 20px 0 0;
+
+            }
+        }
+
+      .form-container{
+        width: 100%;
+        height: auto;
+        padding: 50px 0;
+        text-align: center;
+
+
+
+
+        h4{
+            font-family: $font;
+            color: #2a2a2a;
+            font-size: 35px;
+
+            em{
+                color: #22b3c1;
+
+            }
+
+        }
+
+        .form-parent{
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            line-height: 40px;
+            gap: 50px;
+            margin-top: 50px;
+
+
+            .form{
+                width: 90%;
+                height: auto;
+                text-align: start;
+                display: flex;
+                flex-direction: column;
+                margin: 0 auto;
+
+                label{
+                    font-family: $font;
+                    color: gray;
+    
+                }
+    
+                input{
+                    width: 100%;
+                    height: 45px;
+                    border-radius: 16px;
+                    padding: 0 25px;
+                    outline: none;
+                    border: 1px solid gray;
+                    background: none;
+
+                }
+
+                select{
+                    width: 100%;
+                    height: 45px;
+                    border-radius: 16px;
+                    padding: 0 25px;
+                    outline: none;
+                    border: 1px solid gray;
+                }
+
+               
+
+            }
+            .form-btn{
+                width: 100%;
+
+                button{
+                    width: 85%;
+                    height: 45px;
+                    background: #22b3c1;
+                    color: white;
+                    font-family: $font;
+                    border: none;
+                    border-radius: 20px;
+                    font-size: 18px;
+
+                }
+            }
+        
+        }
+
+
+      }
+
+    }
+
+} 
+    
+}
+@media screen and (min-width: 447px) and (max-width: 769px) {
+    .Concat{
+        width: 100%;
+        height: auto;
+    
+        .concat-main{
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            margin: 25px 0;
+    
+    
+            .concat-text{
+                width: 100%;
+                height: auto;
+                margin: 40px  auto;
+                text-align: center;
+                
+    
+                p{
+                    font-family: $font;
+                    color: $text-color;
+                    font-size: 24px;
+                    font-weight: 600;
+                    margin: 25px 0;
+    
+    
+                }
+    
+                hr{
+                    width: 150px;
+                    margin: 0 auto;
+                }
+     
+                h1{
+                    color: $text-color;
+                    font-family: $font;
+                    font-size: 40px;
+                    margin: 25px 0;
+    
+                }
+    
+                button{
+                    padding: 15px 35px;
+                    color: #22b3c1;
+                    background: white;
+                    border-radius: 26px;
+                    font-family: $font;
+                    border: none;
+                    font-size: 16px;
+                    font-weight: 600;
+                    transition: all .2s linear;
+                    cursor: pointer;
+    
+                    &:hover{
+                        background: #22b3c1;
+                        color: white;
+                    }
+                }
+    
+            }
+    
+            .concat-box{
+                width: 100%;
+                height: auto;
+                display: flex;
+                position: absolute;
+                z-index: 2;
+                justify-content: center;
+                flex-wrap: wrap;
+                // align-items: ;
+                bottom: -520px;
+                
+                gap: 20px;
+    
+                .box{
+                    width: 300px;
+                    height: 190px;
+                    background: white;
+                    border-radius: 20px;
+                    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+    
+                    .icon{
+                        width: 45px;
+                        height: 45px;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #f0f0f0;
+                        color: #22b3c1;
+                        font-size: 20px;
+                    }
+                    
+                  h3{
+                    font-family: $font;
+                    color: $color;
+                    font-size: 20px;
+                    margin: 10px 0;
+    
+                  }
+                  p{
+                    color: #22b3c1;
+                    font-family: $font;
+                    
+                  }
+    
+                }
+    
+            }
+    
+    
+    
+        }
+    
+    
+    
+        .container{
+            width: 90%;
+            height: auto;
+            margin: 0 auto;
+            margin-top: 370px;
+            // position: relative;
+            // top: 760px;
+            background: #F9F9F9;
+            padding: 20px 0;
+    
+            .maps{
+                width: 477px;
+                height: 400px;
+                margin: 0 auto;
+    
+                .map{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 20px 20px 0 0;
+    
+                }
+            }
+    
+          .form-container{
+            width: 447px;
+            height: auto;
+            padding: 50px 0;
+            text-align: center;
+            margin: 0 auto;
+    
+    
+    
+    
+            h4{
+                font-family: $font;
+                color: #2a2a2a;
+                font-size: 35px;
+    
+                em{
+                    color: #22b3c1;
+    
+                }
+    
+            }
+    
+            .form-parent{
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                line-height: 40px;
+                gap: 50px;
+                margin-top: 50px;
+    
+    
+                .form{
+                    width: 90%;
+                    height: auto;
+                    text-align: start;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0 auto;
+    
+                    label{
+                        font-family: $font;
+                        color: gray;
+        
+                    }
+        
+                    input{
+                        width: 100%;
+                        height: 45px;
+                        border-radius: 16px;
+                        padding: 0 25px;
+                        outline: none;
+                        border: 1px solid gray;
+                        background: none;
+    
+                    }
+    
+                    select{
+                        width: 100%;
+                        height: 45px;
+                        border-radius: 16px;
+                        padding: 0 25px;
+                        outline: none;
+                        border: 1px solid gray;
+                    }
+    
+                   
+    
+                }
+                .form-btn{
+                    width: 100%;
+    
+                    button{
+                        width: 85%;
+                        height: 45px;
+                        background: #22b3c1;
+                        color: white;
+                        font-family: $font;
+                        border: none;
+                        border-radius: 20px;
+                        font-size: 18px;
+    
+                    }
+                }
+            
+            }
+    
+    
+          }
+    
+        }
+    
+    }   
+}
+@media screen and (min-width: 769px) and (max-width: 960px) {
+    .Concat{
+        width: 100%;
+        height: auto;
+    
+        .concat-main{
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            margin: 25px 0;
+    
+    
+            .concat-text{
+                width: 100%;
+                height: auto;
+                margin: 40px  auto;
+                text-align: center;
+                
+    
+                p{
+                    font-family: $font;
+                    color: $text-color;
+                    font-size: 24px;
+                    font-weight: 600;
+                    margin: 25px 0;
+    
+    
+                }
+    
+                hr{
+                    width: 150px;
+                    margin: 0 auto;
+                }
+     
+                h1{
+                    color: $text-color;
+                    font-family: $font;
+                    font-size: 40px;
+                    margin: 25px 0;
+    
+                }
+    
+                button{
+                    padding: 15px 35px;
+                    color: #22b3c1;
+                    background: white;
+                    border-radius: 26px;
+                    font-family: $font;
+                    border: none;
+                    font-size: 16px;
+                    font-weight: 600;
+                    transition: all .2s linear;
+                    cursor: pointer;
+    
+                    &:hover{
+                        background: #22b3c1;
+                        color: white;
+                    }
+                }
+    
+            }
+    
+            .concat-box{
+                width: 100%;
+                height: auto;
+                display: flex;
+                position: absolute;
+                z-index: 2;
+                justify-content: center;
+                flex-wrap: wrap;
+                // align-items: ;
+                bottom: -320px;
+                
+                gap: 20px;
+    
+                .box{
+                    width: 300px;
+                    height: 190px;
+                    background: white;
+                    border-radius: 20px;
+                    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+    
+                    .icon{
+                        width: 45px;
+                        height: 45px;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #f0f0f0;
+                        color: #22b3c1;
+                        font-size: 20px;
+                    }
+                    
+                  h3{
+                    font-family: $font;
+                    color: $color;
+                    font-size: 20px;
+                    margin: 10px 0;
+    
+                  }
+                  p{
+                    color: #22b3c1;
+                    font-family: $font;
+                    
+                  }
+    
+                }
+    
+            }
+    
+    
+    
+        }
+    
+    
+    
+        .container{
+            width: 90%;
+            height: auto;
+            margin: 0 auto;
+            margin-top: 370px;
+            // position: relative;
+            // top: 760px;
+            background: #F9F9F9;
+            padding: 20px 0;
+    
+            .maps{
+                width: 85%;
+                height: 400px;
+                margin: 0 auto;
+    
+                .map{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 20px 20px 0 0;
+    
+                }
+            }
+    
+          .form-container{
+            width: 85%;
+            height: auto;
+            padding: 50px 0;
+            text-align: center;
+            margin: 0 auto;
+    
+    
+    
+    
+            h4{
+                font-family: $font;
+                color: #2a2a2a;
+                font-size: 35px;
+    
+                em{
+                    color: #22b3c1;
+    
+                }
+    
+            }
+    
+            .form-parent{
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                line-height: 40px;
+                gap: 50px;
+                margin-top: 50px;
+    
+    
+                .form{
+                    width: 90%;
+                    height: auto;
+                    text-align: start;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0 auto;
+    
+                    label{
+                        font-family: $font;
+                        color: gray;
+        
+                    }
+        
+                    input{
+                        width: 100%;
+                        height: 45px;
+                        border-radius: 16px;
+                        padding: 0 25px;
+                        outline: none;
+                        border: 1px solid gray;
+                        background: none;
+    
+                    }
+    
+                    select{
+                        width: 100%;
+                        height: 45px;
+                        border-radius: 16px;
+                        padding: 0 25px;
+                        outline: none;
+                        border: 1px solid gray;
+                    }
+    
+                   
+    
+                }
+                .form-btn{
+                    width: 100%;
+    
+                    button{
+                        width: 85%;
+                        height: 45px;
+                        background: #22b3c1;
+                        color: white;
+                        font-family: $font;
+                        border: none;
+                        border-radius: 20px;
+                        font-size: 18px;
+    
+                    }
+                }
+            
+            }
+    
+    
+          }
+    
+        }
+    
+    }   
+}
+@media screen and (min-width: 960px) and (max-width: 1200px) {
+    .Concat{
+        width: 100%;
+        height: auto;
+    
+        .concat-main{
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            position: relative;
+            margin: 25px 0;
+    
+    
+            .concat-text{
+                width: 100%;
+                height: auto;
+                margin: 40px  auto;
+                text-align: center;
+                
+    
+                p{
+                    font-family: $font;
+                    color: $text-color;
+                    font-size: 24px;
+                    font-weight: 600;
+                    margin: 25px 0;
+    
+    
+                }
+    
+                hr{
+                    width: 150px;
+                    margin: 0 auto;
+                }
+     
+                h1{
+                    color: $text-color;
+                    font-family: $font;
+                    font-size: 40px;
+                    margin: 25px 0;
+    
+                }
+    
+                button{
+                    padding: 15px 35px;
+                    color: #22b3c1;
+                    background: white;
+                    border-radius: 26px;
+                    font-family: $font;
+                    border: none;
+                    font-size: 16px;
+                    font-weight: 600;
+                    transition: all .2s linear;
+                    cursor: pointer;
+    
+                    &:hover{
+                        background: #22b3c1;
+                        color: white;
+                    }
+                }
+    
+            }
+    
+            .concat-box{
+                width: 100%;
+                height: auto;
+                display: flex;
+                position: absolute;
+                z-index: 2;
+                justify-content: center;
+                flex-wrap: wrap;
+                // align-items: ;
+                bottom: -120px;
+                
+                gap: 20px;
+    
+                .box{
+                    width: 300px;
+                    height: 190px;
+                    background: white;
+                    border-radius: 20px;
+                    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+    
+                    .icon{
+                        width: 45px;
+                        height: 45px;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: #f0f0f0;
+                        color: #22b3c1;
+                        font-size: 20px;
+                    }
+                    
+                  h3{
+                    font-family: $font;
+                    color: $color;
+                    font-size: 20px;
+                    margin: 10px 0;
+    
+                  }
+                  p{
+                    color: #22b3c1;
+                    font-family: $font;
+                    
+                  }
+    
+                }
+    
+            }
+    
+    
+    
+        }
+    
+    
+    
+        .container{
+            width: 90%;
+            height: auto;
+            margin: 0 auto;
+            margin-top: 200px;
+            // position: relative;
+            // top: 760px;
+            background: #F9F9F9;
+            padding: 20px 0;
+    
+            .maps{
+                width: 85%;
+                height: 400px;
+                margin: 0 auto;
+    
+                .map{
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 20px 20px 0 0;
+    
+                }
+            }
+    
+          .form-container{
+            width: 85%;
+            height: auto;
+            padding: 50px 0;
+            text-align: center;
+            margin: 0 auto;
+    
+    
+    
+    
+            h4{
+                font-family: $font;
+                color: #2a2a2a;
+                font-size: 35px;
+    
+                em{
+                    color: #22b3c1;
+    
+                }
+    
+            }
+    
+            .form-parent{
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                line-height: 40px;
+                gap: 50px;
+                margin-top: 50px;
+    
+    
+                .form{
+                    width: 90%;
+                    height: auto;
+                    text-align: start;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0 auto;
+    
+                    label{
+                        font-family: $font;
+                        color: gray;
+        
+                    }
+        
+                    input{
+                        width: 100%;
+                        height: 45px;
+                        border-radius: 16px;
+                        padding: 0 25px;
+                        outline: none;
+                        border: 1px solid gray;
+                        background: none;
+    
+                    }
+    
+                    select{
+                        width: 100%;
+                        height: 45px;
+                        border-radius: 16px;
+                        padding: 0 25px;
+                        outline: none;
+                        border: 1px solid gray;
+                    }
+    
+                   
+    
+                }
+                .form-btn{
+                    width: 100%;
+    
+                    button{
+                        width: 85%;
+                        height: 45px;
+                        background: #22b3c1;
+                        color: white;
+                        font-family: $font;
+                        border: none;
+                        border-radius: 20px;
+                        font-size: 18px;
+    
+                    }
+                }
+            
+            }
+    
+    
+          }
+    
+        }
+    
+    }  
+}

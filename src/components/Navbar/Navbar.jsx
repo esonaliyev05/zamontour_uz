@@ -48,10 +48,10 @@ const Navbar = () => {
 
       <div className={open ? 'Open activ' : 'Open'}>
         <ul>
-          <li><a href="#">Bosh sahifa</a></li>
-          <li><a href="#">Biz haqimizda</a></li>
-          <li><a href="#">Turlar</a></li>
-          <li><a href="#">Kontaktlar</a></li>
+        <li><a href="/">Bosh sahifa</a></li>
+          <li><a href="#about">Biz haqimizda</a></li>
+          <li><a href="#tours">Turlar</a></li>
+          <li><a href="#concat">Kontaktlar</a></li>
         </ul>
         <div className="nav-languech">
             <div className="translate">Uz</div>

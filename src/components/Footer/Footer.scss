@@ -23,7 +23,7 @@ $font: "Poppins", sans-serif;
             height: 100%;
             margin: 0 auto;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
             align-items: center;
 
 
@@ -174,4 +174,261 @@ $font: "Poppins", sans-serif;
 
 }
  
+}
+@media screen and (min-width: 447px) and (max-width: 769px) {
+    .footer{
+        width: 100%;
+        height: auto;
+    
+    
+    
+        .container{
+            width: 100%;
+            height: 280px;
+            background: url(../../../public/Footer/footerimg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            flex-wrap: wrap;
+    
+            .text{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                text-align: center;
+    
+    
+                h1{
+                   font-family: $font;
+                   font-size: 33px;
+                   text-transform: uppercase;
+                   color: white;
+                   line-height: 40px;
+                   
+                   span{
+                    display: block;
+                    font-size: 15px;
+    
+                   }
+                }
+    
+                button{
+                    padding: 15px 35px;
+                    background: $bg-color;
+                    color: white;
+                    border-radius: 26px;
+                    border: 1px solid white;
+                    font-family: $font;
+                    transition: all .2s linear;
+                    font-weight: 600;
+                    cursor: pointer;
+                    margin: 0 auto;
+    
+    
+    
+                    &:hover{
+                        background: #fff;
+                        color: #22b3c1;
+                    }
+                }
+    
+    
+            }
+    
+        }
+        .footer-end{
+            width: 100%;
+            height: 70px;
+            background: #22b3c1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+    
+            p{
+                font-family: $font;
+                color: white;
+                font-size: 14px;
+    
+                a{
+                    color: white;
+                }
+            }
+    
+        }
+    
+    }  
+}
+@media screen and (min-width: 769px) and (max-width: 960px) {
+    .footer{
+        width: 100%;
+        height: auto;
+    
+    
+    
+        .container{
+            width: 100%;
+            height: 280px;
+            background: url(../../../public/Footer/footerimg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            // flex-wrap: wrap;
+    
+            .text{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                // flex-wrap: wrap;
+                flex-direction: column;
+                text-align: center;
+    
+    
+                h1{
+                   font-family: $font;
+                   font-size: 33px;
+                   text-transform: uppercase;
+                   color: white;
+                   line-height: 40px;
+                   
+                   span{
+                    display: block;
+                    font-size: 15px;
+    
+                   }
+                }
+    
+                button{
+                    padding: 15px 35px;
+                    background: $bg-color;
+                    color: white;
+                    border-radius: 26px;
+                    border: 1px solid white;
+                    font-family: $font;
+                    transition: all .2s linear;
+                    font-weight: 600;
+                    cursor: pointer;
+                    margin: 0 auto;
+    
+    
+    
+                    &:hover{
+                        background: #fff;
+                        color: #22b3c1;
+                    }
+                }
+    
+    
+            }
+    
+        }
+        .footer-end{
+            width: 100%;
+            height: 70px;
+            background: #22b3c1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+    
+            p{
+                font-family: $font;
+                color: white;
+                font-size: 14px;
+    
+                a{
+                    color: white;
+                }
+            }
+    
+        }
+    
+    }    
+}
+@media screen and (min-width: 960px) and (max-width: 1200px) {
+    .footer{
+        width: 100%;
+        height: 350px;
+    
+    
+    
+        .container{
+            width: 100%;
+            height: 280px;
+            background: url(../../../public/Footer/footerimg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+    
+            .text{
+                width: auto;
+                height: 100%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+    
+    
+                h1{
+                   font-family: $font;
+                   font-size: 35px;
+                   text-transform: uppercase;
+                   color: white;
+                   line-height: 40px;
+                   
+                   span{
+                    display: block;
+                    font-size: 20px;
+    
+                   }
+                }
+    
+                button{
+                    padding: 15px 35px;
+                    background: $bg-color;
+                    color: white;
+                    border-radius: 26px;
+                    border: 1px solid white;
+                    font-family: $font;
+                    transition: all .2s linear;
+                    font-weight: 600;
+                    cursor: pointer;
+    
+    
+    
+                    &:hover{
+                        background: #fff;
+                        color: #22b3c1;
+                    }
+                }
+    
+    
+            }
+    
+        }
+        .footer-end{
+            width: 100%;
+            height: 70px;
+            background: #22b3c1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            p{
+                font-family: $font;
+                color: white;
+    
+                a{
+                    color: white;
+                }
+            }
+    
+        }
+    
+    }  
 }

@@ -6,6 +6,7 @@ $font: "Poppins", sans-serif;
 .Concat{
     width: 100%;
     height: auto;
+    overflow: hidden;
 
     .concat-main{
         width: 100%;
@@ -615,7 +616,7 @@ $font: "Poppins", sans-serif;
             padding: 20px 0;
     
             .maps{
-                width: 477px;
+                width: 407px;
                 height: 400px;
                 margin: 0 auto;
     
@@ -628,7 +629,7 @@ $font: "Poppins", sans-serif;
             }
     
           .form-container{
-            width: 447px;
+            width: 407px;
             height: auto;
             padding: 50px 0;
             text-align: center;
@@ -969,6 +970,7 @@ $font: "Poppins", sans-serif;
     .Concat{
         width: 100%;
         height: auto;
+        overflow: hidden;
     
         .concat-main{
             width: 100%;

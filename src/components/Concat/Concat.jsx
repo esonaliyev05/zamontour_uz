@@ -3,8 +3,11 @@ import "./Concat.scss";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaMapMarker } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 const Concat = () => {
+  const { t } = useTranslation();
+
   const [formData, setFormData] = useState({
     name: '',
     number: '',
@@ -28,14 +31,19 @@ const Concat = () => {
       Visa turi: ${formData.visa}
     `;
 
-    const botToken = '7819510076:AAE32MgphCBBzO9aSU5XDJzCNKusb0vd_1w'; // Telegram bot tokeningizni shu yerga joylashtiring
-    const chatId = '6992354984'; // Telegram chat IDingizni shu yerga joylashtiring
+    const botToken = process.env.REACT_APP_BOT_TOKEN; // Fetch from environment variables
+    const chatId = process.env.REACT_APP_CHAT_ID; // Fetch from environment variables
+
+    if (!botToken || !chatId) {
+      alert(t('Telegram bot token yoki chat ID topilmadi!'));
+      return;
+    }
 
     const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
     
     try {
       await fetch(url);
-      alert('Xabar yuborildi!');
+      alert(t('Xabar yuborildi!'));
       setFormData({ // Formani tozalash
         name: '',
         number: '',
@@ -45,7 +53,7 @@ const Concat = () => {
         visa: ''
       });
     } catch (error) {
-      alert('Xabar yuborishda xatolik yuz berdi.');
+      alert(t('Xabar yuborishda xatolik yuz berdi.'));
     }
   };
 
@@ -53,15 +61,16 @@ const Concat = () => {
     e.preventDefault();
     sendToTelegram();
   };
+
   return (
     <div className="Concat" id="concat">
       <div className="concat-main">
         <div className="concat-text">
-          <p>O'zingiz yoqtirganingizni tanlang</p>
+          <p>{t("O'zingiz yoqtirganingizni tanlang")}</p>
           <hr />
-          <h1>O'z joyingizni band qiling</h1>
+          <h1>{t("O'z joyingizni band qiling")}</h1>
 
-          <button>Ko'proq bilish...</button>
+          <button>{t("Ko'proq bilish...")}</button>
         </div>
 
         <div className="concat-box">
@@ -70,7 +79,7 @@ const Concat = () => {
               <FaPhoneAlt />
             </div>
 
-            <h3>Telefon raqam</h3>
+            <h3>{t("Telefon raqam")}</h3>
             <p>+998 99 299 99 96</p>
           </div>
           <div className="box">
@@ -78,7 +87,7 @@ const Concat = () => {
               <MdEmail />
             </div>
 
-            <h3>Bizga email orqali bog'laning</h3>
+            <h3>{t("Bizga email orqali bog'laning")}</h3>
             <p>zamonbiznestour@mail.ru</p>
           </div>
           <div className="box">
@@ -86,7 +95,7 @@ const Concat = () => {
               <FaMapMarker />
             </div>
 
-            <h3>Ofisimizga tashrif buyuring</h3>
+            <h3>{t("Ofisimizga tashrif buyuring")}</h3>
             <p>15/25, Chilanzar - 9, Tashkent city</p>
           </div>
         </div>
@@ -104,108 +113,108 @@ const Concat = () => {
         </div>
 
         <div className="form-container">
-      <h4>
-        O'z <em>joyingizni</em> band <em>qiling</em>
-      </h4>
+          <h4>
+            {t("O'z")}<em>{t("joyingizni")}</em> {t("band")}<em>{t("qiling")}</em>
+          </h4>
 
-      <form onSubmit={handleSubmit} className="form-parent">
-        <div className="form">
-          <label htmlFor="name">Ismingiz</label>
-          <input
-            id="name"
-            type="text"
-            name="name"
-            placeholder="Ex. John Smithee"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-        </div>
+          <form onSubmit={handleSubmit} className="form-parent">
+            <div className="form">
+              <label htmlFor="name">{t("Ismingiz")}</label>
+              <input
+                id="name"
+                type="text"
+                name="name"
+                placeholder={t("Ex. John Smithee")}
+                value={formData.name}
+                onChange={handleChange}
+                required
+              />
+            </div>
 
-        <div className="form">
-          <label htmlFor="number">Telefon raqamingiz</label>
-          <input
-            id="number"
-            type="text"
-            name="number"
-            placeholder="+998 99 999 99 99"
-            value={formData.number}
-            onChange={handleChange}
-            required
-          />
-        </div>
+            <div className="form">
+              <label htmlFor="number">{t("Telefon raqamingiz")}</label>
+              <input
+                id="number"
+                type="text"
+                name="number"
+                placeholder={t("+998 99 999 99 99")}
+                value={formData.number}
+                onChange={handleChange}
+                required
+              />
+            </div>
 
-        <div className="form">
-          <label htmlFor="chooseGuests">Necha kishisiz</label>
-          <select
-            id="chooseGuests"
-            name="guests"
-            value={formData.guests}
-            onChange={handleChange}
-          >
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4+">4+</option>
-          </select>
-        </div>
+            <div className="form">
+              <label htmlFor="chooseGuests">{t("Necha kishisiz")}</label>
+              <select
+                id="chooseGuests"
+                name="guests"
+                value={formData.guests}
+                onChange={handleChange}
+              >
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4+">4+</option>
+              </select>
+            </div>
 
-        <div className="form">
-          <label htmlFor="nameData">Uchish sanasi</label>
-          <input
-            id="nameData"
-            type="date"
-            name="date"
-            value={formData.date}
-            onChange={handleChange}
-            required
-          />
-        </div>
+            <div className="form">
+              <label htmlFor="nameData">{t("Uchish sanasi")}</label>
+              <input
+                id="nameData"
+                type="date"
+                name="date"
+                value={formData.date}
+                onChange={handleChange}
+                required
+              />
+            </div>
 
-        <div className="form">
-          <label htmlFor="chooseCategory">Manzilingizni tanlang</label>
-          <select
-            id="chooseCategory"
-            name="destination"
-            value={formData.destination}
-            onChange={handleChange}
-          >
-            <option value="Antalya">Antalya</option>
-            <option value="Istanbul">Istanbul</option>
-            <option value="Dubai">Dubai</option>
-            <option value="Sharm El-Sheikh">Sharm El-Sheikh</option>
-            <option value="Kuala Lumpur">Kuala Lumpur</option>
-            <option value="Kanada">Kanada</option>
-            <option value="England">Angliya</option>
-            <option value="USA">AQSh</option>
-          </select>
-        </div>
+            <div className="form">
+              <label htmlFor="chooseCategory">{t("Manzilingizni tanlang")}</label>
+              <select
+                id="chooseCategory"
+                name="destination"
+                value={formData.destination}
+                onChange={handleChange}
+              >
+                <option value="Antalya">{t("Antalya")}</option>
+                <option value="Istanbul">{t("Istanbul")}</option>
+                <option value="Dubai">{t("Dubai")}</option>
+                <option value="Sharm El-Sheikh">{t("Sharm El-Sheikh")}</option>
+                <option value="Kuala Lumpur">{t("Kuala Lumpur")}</option>
+                <option value="Kanada">{t("Kanada")}</option>
+                <option value="England">{t("Angliya")}</option>
+                <option value="USA">{t("AQSh")}</option>
+              </select>
+            </div>
 
-        <div className="form">
-          <label htmlFor="visa">Visa turini tanlang</label>
-          <select
-            name="visa"
-            id="visa"
-            value={formData.visa}
-            onChange={handleChange}
-          >
-            <option value="Europe">Europe</option>
-            <option value="England">England</option>
-            <option value="Japan">Japan</option>
-            <option value="Oman">Oman</option>
-            <option value="USA">USA</option>
-            <option value="Saudiya Arabistoni">Saudi Arabia</option>
-            <option value="India">India</option>
-            <option value="China">China</option>
-            <option value="HongKong">Hong Kong</option>
-          </select>
-        </div>
+            <div className="form">
+              <label htmlFor="visa">{t("Visa turini tanlang")}</label>
+              <select
+                name="visa"
+                id="visa"
+                value={formData.visa}
+                onChange={handleChange}
+              >
+                <option value="Europe">{t("Europe")}</option>
+                <option value="England">{t("England")}</option>
+                <option value="Japan">{t("Japan")}</option>
+                <option value="Oman">{t("Oman")}</option>
+                <option value="USA">{t("USA")}</option>
+                <option value="Saudiya Arabistoni">{t("Saudi Arabia")}</option>
+                <option value="India">{t("India")}</option>
+                <option value="China">{t("China")}</option>
+                <option value="HongKong">{t("Hong Kong")}</option>
+              </select>
+            </div>
 
-        <div className="form-btn">
-          <button type="submit">Band qilish</button>
+            <div className="form-btn">
+              <button type="submit">{t("Band qilish")}</button>
+            </div>
+          </form>
         </div>
-      </form>
-    </div>
       </div>
     </div>
   );

@@ -46,6 +46,7 @@ $text-color: #fff;
                     color: black;
                     font-family: "Poppins", sans-serif;
                     line-height: 25px;
+                    text-transform: capitalize;
 
                     span{
                         color: gray;
@@ -55,7 +56,16 @@ $text-color: #fff;
                         gap: 10px;
                     }
 
+                    &:nth-child(2){
+                        color: #22b3c1;
+
+                        span{
+                            color: gray;
+                        }
+                    }
+
                 }
+
 
             }
             .end{
@@ -69,6 +79,8 @@ $text-color: #fff;
                         color: black;
                         font-family: "Poppins", sans-serif;
                         margin: 10px 0;
+                    text-transform: capitalize;
+
 
                     }
 
@@ -76,6 +88,11 @@ $text-color: #fff;
                     font-family: "Poppins", sans-serif;
                      color: gray;
                      margin: 10px 0;
+                     display: flex;
+                     align-items: center;
+                     gap: 5px;
+                    text-transform: capitalize;
+
 
                      span{
                         font-size: 18px;
@@ -92,12 +109,16 @@ $text-color: #fff;
                 background: $bg-color;
                 border: none;
                 border-radius: 26px;
-                color: white;
                 font-family: "Poppins", sans-serif;
                 text-transform: capitalize;
                 font-size: 16px;
                 margin: 10px 0;
 
+                a{
+                    color: white;
+
+                }
+
             }
 
         }
@@ -105,46 +126,50 @@ $text-color: #fff;
 
     }
 
-    .btn{
-        width: 100%;
-        height: 100px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        gap: 20px;
-        justify-content: center;
-        margin: 50px 0;
-
-        .nextarrow , .prevarrow{
-            width: 40px;
-            height: 40px;
-            background-color: white;
-            color: $bg-color;
-            border-radius: 50%;
-            border: none;
-            font-size: 25px;
-            border: 2px solid $bg-color;
-            transition: all .2s linear;
-
-            &:hover{
-                background: $bg-color;
-                color: #fff;
-
-            }
-
-        }
-        // {
-        //     width: 40px;
-        //     height: 40px;
-        //     background-color: white;
-        //     color: $bg-color;
-        //     border-radius: 50%;
-        //     border: none;
-        //     font-size: 25px;
-        //     border: 2px solid $bg-color;
-        // }
-    }
+   
   }
+  .swipernav{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    justify-content: center;
+    margin: 50px 0;
+
+    .nextarrow , .prevarrow{
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        color: $bg-color;
+        border-radius: 50%;
+        border: none;
+        font-size: 25px;
+        border: 2px solid $bg-color;
+        transition: all .2s linear;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover{
+            background: $bg-color;
+            color: #fff;
+
+        }
+
+    }
+    // {
+    //     width: 40px;
+    //     height: 40px;
+    //     background-color: white;
+    //     color: $bg-color;
+    //     border-radius: 50%;
+    //     border: none;
+    //     font-size: 25px;
+    //     border: 2px solid $bg-color;
+    // }
+}
   @media screen and (max-width: 447px){
       .Main-Swiper{
     width: 100%;

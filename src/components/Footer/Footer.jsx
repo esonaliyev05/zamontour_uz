@@ -1,34 +1,31 @@
-import React from 'react'
-import "./Footer.scss"
+import React from 'react';
+import "./Footer.scss";
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const {t} = useTranslation();
+  
   return (
     <>
-     <div className='footer'>
-            
-        
-
-      <div className="container">
-
-        <div className="text">
-            
-            <h1>Sayohat qilishni xohlaysizmi?
-
-              <span>Unda biz bilan hoziroq bog'laning</span>
+      <div className='footer'>
+        <div className="container">
+          <div className="text">
+            <h1>
+              {t('Sayohat qilishni xohlaysizmi?')}
+              <span>{t('Unda biz bilan hoziroq bog`laning')}</span>
             </h1>
-            <button>Bog'lanish</button>
+            <button>{t('Bog`lanish')}</button>
+          </div>
         </div>
 
-      </div>
-      
-      <div className="footer-end">
-      <p>Copyright © 2024 <a href="#">Zamon Business Tour.</a> All rights reserved.
+        <div className="footer-end">
+          <p>
+            Copyright © 2024 <a href="#">Zamon Business Tour.</a> {t('Barcha huquqlar zaxirlangan')}
           </p>
+        </div>
       </div>
-
-     </div>
     </>
-  )
+  );
 }
 
-export default Footer
+export default Footer;

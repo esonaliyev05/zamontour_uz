@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -13,18 +13,17 @@ import { TbClockHour3Filled } from "react-icons/tb";
 import { GoCheck } from "react-icons/go";
 import { GoArrowLeft } from "react-icons/go";
 import { GoArrowRight } from "react-icons/go";
+import { t } from 'i18next';
+import { useTranslation } from 'react-i18next';
 
 export default function App() {
+  const { t } = useTranslation();
   return (
     <>
       <Swiper
         slidesPerView={3}
         spaceBetween={30}
-        // pagination={{
-        //   clickable: true,
-        // }}
         breakpoints={{
-          // Media qoidalari uchun breakpointlar
           307: {
             slidesPerView: 1, // Mobil uchun 1 ta slayd
             spaceBetween: 10,
@@ -37,160 +36,138 @@ export default function App() {
             slidesPerView: 3, // Katta ekranlar uchun 3 ta slayd
             spaceBetween: 30,
           },
-      }}
+        }}
         navigation={{
           prevEl: ".prevarrow",
           nextEl: ".nextarrow"
-      }}
+        }}
         loop={true}
-        modules={[Pagination , Navigation]}
+        modules={[Pagination, Navigation]}
         className="Swiper-end"
       >
         <SwiperSlide className='swiper_chiled'>
           <img src="public/Main-swiper/china.jpg" alt="" />
           <div className="text">
-             
              <h3>
-             Xong Kong
-              <span>   <FaUsers /> 300 buyurtmalar</span>
+               {t("Hindiston")}
+               <span><FaUsers /> {t("300 buyurtmalar")}</span>
              </h3>
-
              <ul>
-              <p>Biznig xizmatlar o‘z ichiga oladi:</p>
-              <li> <span><MdDiscount/></span>  Eng arzon narxlar</li>
-              <li> <TbClockHour3Filled/> <span></span>  Tezkor ishlash vaqti</li>
-              <li> <GoCheck/> <span></span> Ishonchli yordam</li>
+              <p>{t("Bizning xizmatlar o‘z ichiga oladi:")}</p>
+              <li><span><MdDiscount /></span> {t("Eng arzon narxlar")}</li>
+              <li><TbClockHour3Filled /> {t("Tezkor ishlash vaqti")}</li>
+              <li><GoCheck /> {t("Ishonchli yordam")}</li>
              </ul>
-
-             <button><a href="#">Joy band qilish</a></button>
-
+             <button><a href="#">{t("Joy band qilish")}</a></button>
           </div>
         </SwiperSlide>
+
         <SwiperSlide className='swiper_chiled'>
           <img src="public/Main-swiper/europe.jpeg" alt="" />
           <div className="text">
-             
              <h3>
-             Xong Kong
-              <span>   <FaUsers /> 300 buyurtmalar</span>
+               {t("Yaponiya")}
+               <span><FaUsers /> {t("300 buyurtmalar")}</span>
              </h3>
-
              <ul>
-              <p>Biznig xizmatlar o‘z ichiga oladi:</p>
-              <li> <span><MdDiscount/></span>  Eng arzon narxlar</li>
-              <li> <TbClockHour3Filled/> <span></span>  Tezkor ishlash vaqti</li>
-              <li> <GoCheck/> <span></span> Ishonchli yordam</li>
+              <p>{t("Bizning xizmatlar o‘z ichiga oladi:")}</p>
+              <li><span><MdDiscount /></span> {t("Eng arzon narxlar")}</li>
+              <li><TbClockHour3Filled /> {t("Tezkor ishlash vaqti")}</li>
+              <li><GoCheck /> {t("Ishonchli yordam")}</li>
              </ul>
-
-             <button><a href="#">Joy band qilish</a></button>
-
+             <button><a href="#">{t("Joy band qilish")}</a></button>
           </div>
         </SwiperSlide>
+
         <SwiperSlide className='swiper_chiled'>
           <img src="public/Main-swiper/hongkong.jpg" alt="" />
           <div className="text">
-             
              <h3>
-             Xong Kong
-              <span>   <FaUsers /> 300 buyurtmalar</span>
+               {t("Saudiya Arabistoni")}
+               <span><FaUsers /> {t("300 buyurtmalar")}</span>
              </h3>
-
              <ul>
-              <p>Biznig xizmatlar o‘z ichiga oladi:</p>
-              <li> <span><MdDiscount/></span>  Eng arzon narxlar</li>
-              <li> <TbClockHour3Filled/> <span></span>  Tezkor ishlash vaqti</li>
-              <li> <GoCheck/> <span></span> Ishonchli yordam</li>
+              <p>{t("Bizning xizmatlar o‘z ichiga oladi:")}</p>
+              <li><span><MdDiscount /></span> {t("Eng arzon narxlar")}</li>
+              <li><TbClockHour3Filled /> {t("Tezkor ishlash vaqti")}</li>
+              <li><GoCheck /> {t("Ishonchli yordam")}</li>
              </ul>
-
-             <button><a href="#">Joy band qilish</a></button>
-
+             <button><a href="#">{t("Joy band qilish")}</a></button>
           </div>
         </SwiperSlide>
+
         <SwiperSlide className='swiper_chiled'>
           <img src="public/Main-swiper/india.jpg" alt="" />
           <div className="text">
-             
              <h3>
-             Xong Kong
-              <span>   <FaUsers /> 300 buyurtmalar</span>
+               {t("Omon")}
+               <span><FaUsers /> {t("300 buyurtmalar")}</span>
              </h3>
-
              <ul>
-              <p>Biznig xizmatlar o‘z ichiga oladi:</p>
-              <li> <span><MdDiscount/></span>  Eng arzon narxlar</li>
-              <li> <TbClockHour3Filled/> <span></span>  Tezkor ishlash vaqti</li>
-              <li> <GoCheck/> <span></span> Ishonchli yordam</li>
+              <p>{t("Bizning xizmatlar o‘z ichiga oladi:")}</p>
+              <li><span><MdDiscount /></span> {t("Eng arzon narxlar")}</li>
+              <li><TbClockHour3Filled /> {t("Tezkor ishlash vaqti")}</li>
+              <li><GoCheck /> {t("Ishonchli yordam")}</li>
              </ul>
-
-             <button><a href="#">Joy band qilish</a></button>
-
+             <button><a href="#">{t("Joy band qilish")}</a></button>
           </div>
         </SwiperSlide>
+
         <SwiperSlide className='swiper_chiled'>
           <img src="public/Main-swiper/japan.jpg" alt="" />
           <div className="text">
-             
              <h3>
-             Xong Kong
-              <span>   <FaUsers /> 300 buyurtmalar</span>
+               {t("Xitoy")}
+               <span><FaUsers /> {t("300 buyurtmalar")}</span>
              </h3>
-
              <ul>
-              <p>Biznig xizmatlar o‘z ichiga oladi:</p>
-              <li> <span><MdDiscount/></span>  Eng arzon narxlar</li>
-              <li> <TbClockHour3Filled/> <span></span>  Tezkor ishlash vaqti</li>
-              <li> <GoCheck/> <span></span> Ishonchli yordam</li>
+              <p>{t("Bizning xizmatlar o‘z ichiga oladi:")}</p>
+              <li><span><MdDiscount /></span> {t("Eng arzon narxlar")}</li>
+              <li><TbClockHour3Filled /> {t("Tezkor ishlash vaqti")}</li>
+              <li><GoCheck /> {t("Ishonchli yordam")}</li>
              </ul>
-
-             <button><a href="#">Joy band qilish</a></button>
-
+             <button><a href="#">{t("Joy band qilish")}</a></button>
           </div>
         </SwiperSlide>
+
         <SwiperSlide className='swiper_chiled'>
           <img src="public/Main-swiper/oman.jpg" alt="" />
           <div className="text">
-             
              <h3>
-             Xong Kong
-              <span>   <FaUsers /> 300 buyurtmalar</span>
+               {t("Xong Kong")}
+               <span><FaUsers /> {t("300 buyurtmalar")}</span>
              </h3>
-
              <ul>
-              <p>Biznig xizmatlar o‘z ichiga oladi:</p>
-              <li> <span><MdDiscount/></span>  Eng arzon narxlar</li>
-              <li> <TbClockHour3Filled/> <span></span>  Tezkor ishlash vaqti</li>
-              <li> <GoCheck/> <span></span> Ishonchli yordam</li>
+              <p>{t("Bizning xizmatlar o‘z ichiga oladi:")}</p>
+              <li><span><MdDiscount /></span> {t("Eng arzon narxlar")}</li>
+              <li><TbClockHour3Filled /> {t("Tezkor ishlash vaqti")}</li>
+              <li><GoCheck /> {t("Ishonchli yordam")}</li>
              </ul>
-
-             <button><a href="#">Joy band qilish</a></button>
-
+             <button><a href="#">{t("Joy band qilish")}</a></button>
           </div>
         </SwiperSlide>
+
         <SwiperSlide className='swiper_chiled'>
           <img src="public/Main-swiper/saudi.jpg" alt="" />
           <div className="text">
-             
              <h3>
-             Xong Kong
-              <span>   <FaUsers /> 300 buyurtmalar</span>
+               {t("Yevropa (Shengen)")}
+               <span><FaUsers /> {t("300 buyurtmalar")}</span>
              </h3>
-
              <ul>
-              <p>Biznig xizmatlar o‘z ichiga oladi:</p>
-              <li> <span><MdDiscount/></span>  Eng arzon narxlar</li>
-              <li> <TbClockHour3Filled/> <span></span>  Tezkor ishlash vaqti</li>
-              <li> <GoCheck/> <span></span> Ishonchli yordam</li>
+              <p>{t("Bizning xizmatlar o‘z ichiga oladi:")}</p>
+              <li><span><MdDiscount /></span> {t("Eng arzon narxlar")}</li>
+              <li><TbClockHour3Filled /> {t("Tezkor ishlash vaqti")}</li>
+              <li><GoCheck /> {t("Ishonchli yordam")}</li>
              </ul>
-
-             <button><a href="#">Joy band qilish</a></button>
-
+             <button><a href="#">{t("Joy band qilish")}</a></button>
           </div>
         </SwiperSlide>
-       
+
         <div className="btn-end">
-            <button className="prevarrow"><GoArrowLeft/></button>
-            <button className="nextarrow"> <GoArrowRight/></button>
-          </div>
+          <button className="prevarrow"><GoArrowLeft /></button>
+          <button className="nextarrow"><GoArrowRight /></button>
+        </div>
       </Swiper>
     </>
   );

@@ -31,8 +31,8 @@ const Concat = () => {
       Visa turi: ${formData.visa}
     `;
 
-    const botToken = "7819510076:AAE32MgphCBBzO9aSU5XDJzCNKusb0vd_1w" // Fetch from environment variables
-    const chatId =  6992354984; // Fetch from environment variables
+    const botToken = "7819510076:AAE32MgphCBBzO9aSU5XDJzCNKusb0vd_1w"; // Fetch from environment variables
+    const chatId = 6992354984; // Fetch from environment variables
 
     if (!botToken || !chatId) {
       alert(t('Telegram bot token yoki chat ID topilmadi!'));
@@ -114,7 +114,7 @@ const Concat = () => {
 
         <div className="form-container">
           <h4>
-            {t("O'z")}<em>{t("joyingizni")}</em> {t("band")}<em>{t("qiling")}</em>
+            {t("O'z ")}<em>{t("joyingizni")}</em> {t("band ")}<em>{t("qiling")}</em>
           </h4>
 
           <form onSubmit={handleSubmit} className="form-parent">

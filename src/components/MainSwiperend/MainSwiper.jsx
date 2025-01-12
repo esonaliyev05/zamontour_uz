@@ -46,7 +46,7 @@ export default function App() {
         className="Swiper-end"
       >
         <SwiperSlide className='swiper_chiled'>
-          <img src="public/Main-swiper/china.jpg" alt="" />
+          <img src="Main-swiper/china.jpg" alt="" />
           <div className="text">
              <h3>
                {t("Hindiston")}
@@ -63,7 +63,7 @@ export default function App() {
         </SwiperSlide>
 
         <SwiperSlide className='swiper_chiled'>
-          <img src="public/Main-swiper/europe.jpeg" alt="" />
+          <img src="Main-swiper/europe.jpeg" alt="" />
           <div className="text">
              <h3>
                {t("Yaponiya")}
@@ -80,7 +80,7 @@ export default function App() {
         </SwiperSlide>
 
         <SwiperSlide className='swiper_chiled'>
-          <img src="public/Main-swiper/hongkong.jpg" alt="" />
+          <img src="Main-swiper/hongkong.jpg" alt="" />
           <div className="text">
              <h3>
                {t("Saudiya Arabistoni")}
@@ -97,7 +97,7 @@ export default function App() {
         </SwiperSlide>
 
         <SwiperSlide className='swiper_chiled'>
-          <img src="public/Main-swiper/india.jpg" alt="" />
+          <img src="Main-swiper/india.jpg" alt="" />
           <div className="text">
              <h3>
                {t("Omon")}
@@ -114,7 +114,7 @@ export default function App() {
         </SwiperSlide>
 
         <SwiperSlide className='swiper_chiled'>
-          <img src="public/Main-swiper/japan.jpg" alt="" />
+          <img src="Main-swiper/japan.jpg" alt="" />
           <div className="text">
              <h3>
                {t("Xitoy")}
@@ -131,7 +131,7 @@ export default function App() {
         </SwiperSlide>
 
         <SwiperSlide className='swiper_chiled'>
-          <img src="public/Main-swiper/oman.jpg" alt="" />
+          <img src="Main-swiper/oman.jpg" alt="" />
           <div className="text">
              <h3>
                {t("Xong Kong")}
@@ -148,7 +148,7 @@ export default function App() {
         </SwiperSlide>
 
         <SwiperSlide className='swiper_chiled'>
-          <img src="public/Main-swiper/saudi.jpg" alt="" />
+          <img src="Main-swiper/saudi.jpg" alt="" />
           <div className="text">
              <h3>
                {t("Yevropa (Shengen)")}

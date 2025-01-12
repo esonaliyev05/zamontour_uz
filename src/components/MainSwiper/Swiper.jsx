@@ -141,7 +141,7 @@ export default function App() {
           </div>
         </SwiperSlide>
         <SwiperSlide className="chailid-swiper">
-          <img src="public/Main-img/deals-04.jpg" alt="" />
+          <img src="Main-img/deals-04.jpg" alt="" />
           <div className="text-swp">
             <div className="oel">
               <h3>
@@ -187,7 +187,7 @@ export default function App() {
           </div>
         </SwiperSlide>
         <SwiperSlide className="chailid-swiper">
-          <img src="public/Main-img/eng.jpg" alt="" />
+          <img src="Main-img/eng.jpg" alt="" />
           <div className="text-swp">
             <div className="oel">
               <h3>
@@ -233,7 +233,7 @@ export default function App() {
           </div>
         </SwiperSlide>
         <SwiperSlide className="chailid-swiper">
-          <img src="public/Main-img/europe2.jpg" alt="" />
+          <img src="Main-img/europe2.jpg" alt="" />
           <div className="text-swp">
             <div className="oel">
               <h3>
@@ -279,7 +279,7 @@ export default function App() {
           </div>
         </SwiperSlide>
         <SwiperSlide className="chailid-swiper">
-          <img src="public/Main-img/offers-01.jpg" alt="" />
+          <img src="Main-img/offers-01.jpg" alt="" />
           <div className="text-swp">
             <div className="oel">
               <h3>

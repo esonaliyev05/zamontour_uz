@@ -114,7 +114,7 @@ const Concat = () => {
 
         <div className="form-container">
           <h4>
-            {t("O'z ")}<em>{t("joyingizni")}</em> {t("band ")}<em>{t("qiling")}</em>
+            {t("O'z")}<em>   {t("joyingizni")}</em> {t("band")}<em>  {t("qiling")}</em>
           </h4>
 
           <form onSubmit={handleSubmit} className="form-parent">

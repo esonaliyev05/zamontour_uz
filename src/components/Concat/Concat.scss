@@ -105,10 +105,12 @@ $font: "Poppins", sans-serif;
                 }
                 
               h3{
+                width: auto;
                 font-family: $font;
                 color: $color;
                 font-size: 20px;
                 margin: 10px 0;
+                text-align: center;
 
               }
               p{

@@ -31,8 +31,8 @@ const Concat = () => {
       Visa turi: ${formData.visa}
     `;
 
-    const botToken = process.env.REACT_APP_BOT_TOKEN; // Fetch from environment variables
-    const chatId = process.env.REACT_APP_CHAT_ID; // Fetch from environment variables
+    const botToken = "7819510076:AAE32MgphCBBzO9aSU5XDJzCNKusb0vd_1w" // Fetch from environment variables
+    const chatId =  6992354984; // Fetch from environment variables
 
     if (!botToken || !chatId) {
       alert(t('Telegram bot token yoki chat ID topilmadi!'));

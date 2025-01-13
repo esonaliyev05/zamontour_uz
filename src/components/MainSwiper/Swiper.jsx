@@ -49,7 +49,7 @@ export default function App() {
         className="Main-Swiper"
       >
         <SwiperSlide className="chailid-swiper">
-          <img src="/Main-img/cand.jpg" alt="" />
+          <img src="/Main-img/cand.jpg"  loading="lazy" alt="Description" />
           <div className="text-swp">
             <div className="oel">
               <h3>
@@ -95,7 +95,7 @@ export default function App() {
           </div>
         </SwiperSlide>
         <SwiperSlide className="chailid-swiper">
-          <img src="/Main-img/deals-01.jpg" alt="" />
+          <img src="/Main-img/deals-01.jpg" loading="lazy" alt="Description" />
           <div className="text-swp">
             <div className="oel">
               <h3>
@@ -141,7 +141,7 @@ export default function App() {
           </div>
         </SwiperSlide>
         <SwiperSlide className="chailid-swiper">
-          <img src="Main-img/deals-04.jpg" alt="" />
+          <img src="Main-img/deals-04.jpg"  loading="lazy" alt="Description" />
           <div className="text-swp">
             <div className="oel">
               <h3>
@@ -187,7 +187,7 @@ export default function App() {
           </div>
         </SwiperSlide>
         <SwiperSlide className="chailid-swiper">
-          <img src="Main-img/eng.jpg" alt="" />
+          <img src="Main-img/eng.jpg"  loading="lazy" alt="Description"/>
           <div className="text-swp">
             <div className="oel">
               <h3>
@@ -233,7 +233,7 @@ export default function App() {
           </div>
         </SwiperSlide>
         <SwiperSlide className="chailid-swiper">
-          <img src="Main-img/europe2.jpg" alt="" />
+          <img src="Main-img/europe2.jpg"  loading="lazy" alt="Description" />
           <div className="text-swp">
             <div className="oel">
               <h3>
@@ -279,7 +279,7 @@ export default function App() {
           </div>
         </SwiperSlide>
         <SwiperSlide className="chailid-swiper">
-          <img src="Main-img/offers-01.jpg" alt="" />
+          <img src="Main-img/offers-01.jpg"  loading="lazy" alt="Description" />
           <div className="text-swp">
             <div className="oel">
               <h3>

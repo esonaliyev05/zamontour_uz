@@ -13,7 +13,7 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false); // Loadingni false qilish, agar 3 soniyadan keyin sahifa to'liq yuklansa
-    }, 3000); // 3 sekund kutish (yoki boshqa vaqt o'zgartirilishi mumkin)
+    }, 2000); // 3 sekund kutish (yoki boshqa vaqt o'zgartirilishi mumkin)
   }, []);
 
   return (

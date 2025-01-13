@@ -22,7 +22,7 @@ const Navbar = () => {
     <nav>
       <div className="container">
         <div className="logo">
-          <img src="/Navbar/zamon.logo.svg" alt="Logo" />
+          <img src="/Navbar/zamon.logo.svg"  loading="lazy" alt="Description" />
         </div>
 
         <ul className={open ? 'nav-links active' : 'nav-links'}>

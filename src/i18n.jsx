@@ -7,8 +7,9 @@ import enTranslation from "../public/locales/en.json"
 import ruTranslation from "../public/locales/ru.json"
 
 
-i18n
+const language = localStorage.getItem('i18nextLng') || "uz"
 
+i18n
 .use(Backend)
 
 .use(languagedetector)
@@ -17,7 +18,7 @@ i18n
 
 .init({
     fallbackLng: "uz",
-    lng: "uz",
+    lng: language,
     debug: true,
      
     resources:{

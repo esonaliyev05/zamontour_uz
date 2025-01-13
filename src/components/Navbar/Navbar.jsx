@@ -15,8 +15,12 @@ const Navbar = () => {
   };
 
   const changeLanguage = (lang) => {
-    i18n.changeLanguage(lang); // Tilni o'zgartirish
+    i18n.changeLanguage(lang).then(() => {
+      window.location.reload(); // Sahifani qayta yuklash
+    });
   };
+  
+  
 
   return (
     <nav>

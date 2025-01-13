@@ -74,7 +74,7 @@ export default function App() {
                   </div>
                 </div>
 
-                <button>{t("Batafsil ma'lumot")}</button>
+                <button id="concat">{t("Batafsil ma'lumot")}</button>
               </div>
             </div>
           </div>
@@ -119,7 +119,7 @@ export default function App() {
                   </div>
                 </div>
 
-                <button>{t("Batafsil ma'lumot")}</button>
+                <button id="concat">{t("Batafsil ma'lumot")}</button>
               </div>
             </div>
           </div>
@@ -131,7 +131,7 @@ export default function App() {
 
               <h1>{t("Sharm El-Sheikh")}</h1>
 
-              <button>{t("U yerga boring")}</button>
+              <button id="concat">{t("U yerga boring")}</button>
             </div>
 
             <div className="swiper-more">
@@ -164,7 +164,7 @@ export default function App() {
                   </div>
                 </div>
 
-                <button>{t("Batafsil ma'lumot")}</button>
+                <button id="concat">{t("Batafsil ma'lumot")}</button>
               </div>
             </div>
           </div>
@@ -209,7 +209,7 @@ export default function App() {
                   </div>
                 </div>
 
-                <button>{t("Batafsil ma'lumot")}</button>
+                <button id="concat">{t("Batafsil ma'lumot")}</button>
               </div>
             </div>
           </div>

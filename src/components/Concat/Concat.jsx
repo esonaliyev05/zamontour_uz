@@ -73,7 +73,9 @@ const Concat = () => {
           <button>{t("Ko'proq bilish...")}</button>
         </div>
 
-        <div className="concat-box">
+       
+      </div>
+      <div className="concat-box">
           <div className="box">
             <div className="icon">
               <FaPhoneAlt />
@@ -99,7 +101,6 @@ const Concat = () => {
             <p>15/25, Chilanzar - 9, Tashkent city</p>
           </div>
         </div>
-      </div>
 
       <div className="container">
         <div className="maps">

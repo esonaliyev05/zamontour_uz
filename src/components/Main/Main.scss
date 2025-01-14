@@ -139,11 +139,15 @@ main{
                             button{
                                 padding: 14px 25px;
                                 border: none;
-                                color: white;
                                 background: $bg-color;
                                 border-radius: 22px;
                                 font-family: $font;
                                 font-size: 16px;
+                                
+                                a{
+                                    
+                                    color: white;
+                                }
                             }
                         }
 
@@ -230,6 +234,11 @@ main{
                                 border-radius: 22px;
                                 font-family: $font;
                                 font-size: 16px;
+
+                                a{
+                                    width: auto;
+                                    color: white;
+                                }
                             }
                         }
 

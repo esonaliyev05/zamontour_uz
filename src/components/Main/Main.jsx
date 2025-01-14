@@ -55,7 +55,7 @@ const Main = () => {
             <span>{t('Butun dunyo bo\'ylab')}</span>
           </h2>
 
-          <button>{t('Ko\'proq bilish')}</button>
+          <button><a href="#concat">{t('Ko\'proq bilish')}</a></button>
         </div>
         <p>
           {t('Temir yo\'l orqali biz bilan sarguzashtlarni kashf eting!')}
@@ -74,7 +74,7 @@ const Main = () => {
             <span>{t('Jahon bo‘ylab Manzillar')}</span>
           </h2>
 
-          <button>{t('Ko\'proq bilish')}</button>
+          <button><a href="#concat">{t('Ko\'proq bilish')}</a></button>
         </div>
         <p>
           {t('Eng arzon, qulay, xavfsiz aviabiletlar biz bilan! Bizga bog\'laning, biz sizga eng maqbul bo\'ladigan aviabilerni topib beramiz')}
@@ -98,7 +98,7 @@ const Main = () => {
             <span>{t('Birlashgan Arab Amirliklari')}</span>
           </h2>
 
-          <button>{t('Ko\'proq bilish...')}</button>
+          <button><a href="#concat">{t('Ko\'proq bilish...')}</a></button>
         </div>
 
         <p>
@@ -124,7 +124,7 @@ const Main = () => {
             <span>{t('Antalya')}</span>
           </h2>
 
-          <button>{t('Ko\'proq bilish...')}</button>
+          <button><a href="#concat">{t('Ko\'proq bilish...')}</a></button>
         </div>
 
         <p>
@@ -150,7 +150,7 @@ const Main = () => {
             <span>{t('Misr')}</span>
           </h2>
 
-          <button>{t('Ko\'proq bilish...')}</button>
+          <button><a href="#concat">{t('Ko\'proq bilish...')}</a></button>
         </div>
 
         <p>
@@ -176,7 +176,7 @@ const Main = () => {
             <span>{t('Turkey')}</span>
           </h2>
 
-          <button>{t('Ko\'proq bilish...')}</button>
+          <button><a href="#concat">{t('Ko\'proq bilish...')}</a></button>
         </div>
 
         <p>

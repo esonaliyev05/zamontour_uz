@@ -41,7 +41,7 @@ export default function App() {
 
               <h1>{t("Istanbul")}</h1>
 
-              <button>{t("U yerga boring")}</button>
+              <button><a href="#concat">{t("U yerga boring")}</a></button>
             </div>
 
             <div className="swiper-more">
@@ -74,7 +74,7 @@ export default function App() {
                   </div>
                 </div>
 
-                <button >{t("Batafsil ma'lumot")}</button>
+                <button ><a href="#concat">{t("Batafsil ma'lumot")}</a></button>
               </div>
             </div>
           </div>
@@ -86,7 +86,7 @@ export default function App() {
 
               <h1>{t("Dubai")}</h1>
 
-              <button>{t("U yerga boring")}</button>
+              <button><a href="#concat">{t("U yerga boring")}</a></button>
             </div>
 
             <div className="swiper-more">
@@ -119,7 +119,7 @@ export default function App() {
                   </div>
                 </div>
 
-                <button >{t("Batafsil ma'lumot")}</button>
+                <button ><a href="#concat">{t("Batafsil ma'lumot")}</a></button>
               </div>
             </div>
           </div>
@@ -131,7 +131,7 @@ export default function App() {
 
               <h1>{t("Sharm El-Sheikh")}</h1>
 
-              <button>{t("U yerga boring")}</button>
+              <button><a href="#concat">{t("U yerga boring")}</a></button>
             </div>
 
             <div className="swiper-more">
@@ -164,7 +164,7 @@ export default function App() {
                   </div>
                 </div>
 
-                <button >{t("Batafsil ma'lumot")}</button>
+                <button ><a href="#concat">{t("Batafsil ma'lumot")}</a></button>
               </div>
             </div>
           </div>
@@ -176,7 +176,7 @@ export default function App() {
 
               <h1>{t("Antalya")}</h1>
 
-              <button>{t("U yerga boring")}</button>
+              <button><a href="#concat">{t("U yerga boring")}</a></button>
             </div>
 
             <div className="swiper-more">
@@ -209,7 +209,7 @@ export default function App() {
                   </div>
                 </div>
 
-                <button >{t("Batafsil ma'lumot")}</button>
+                <button ><a href="#concat">{t("Batafsil ma'lumot")}</a></button>
               </div>
             </div>
           </div>

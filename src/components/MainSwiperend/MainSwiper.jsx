@@ -58,7 +58,7 @@ export default function App() {
               <li><TbClockHour3Filled /> {t("Tezkor ishlash vaqti")}</li>
               <li><GoCheck /> {t("Ishonchli yordam")}</li>
              </ul>
-             <button><a href="#">{t("Joy band qilish")}</a></button>
+             <button><a href="#concat">{t("Joy band qilish")}</a></button>
           </div>
         </SwiperSlide>
 
@@ -75,7 +75,7 @@ export default function App() {
               <li><TbClockHour3Filled /> {t("Tezkor ishlash vaqti")}</li>
               <li><GoCheck /> {t("Ishonchli yordam")}</li>
              </ul>
-             <button><a href="#">{t("Joy band qilish")}</a></button>
+             <button><a href="#concat">{t("Joy band qilish")}</a></button>
           </div>
         </SwiperSlide>
 
@@ -92,7 +92,7 @@ export default function App() {
               <li><TbClockHour3Filled /> {t("Tezkor ishlash vaqti")}</li>
               <li><GoCheck /> {t("Ishonchli yordam")}</li>
              </ul>
-             <button><a href="#">{t("Joy band qilish")}</a></button>
+             <button><a href="#concat">{t("Joy band qilish")}</a></button>
           </div>
         </SwiperSlide>
 
@@ -109,7 +109,7 @@ export default function App() {
               <li><TbClockHour3Filled /> {t("Tezkor ishlash vaqti")}</li>
               <li><GoCheck /> {t("Ishonchli yordam")}</li>
              </ul>
-             <button><a href="#">{t("Joy band qilish")}</a></button>
+             <button><a href="#concat">{t("Joy band qilish")}</a></button>
           </div>
         </SwiperSlide>
 
@@ -126,7 +126,7 @@ export default function App() {
               <li><TbClockHour3Filled /> {t("Tezkor ishlash vaqti")}</li>
               <li><GoCheck /> {t("Ishonchli yordam")}</li>
              </ul>
-             <button><a href="#">{t("Joy band qilish")}</a></button>
+             <button><a href="#concat">{t("Joy band qilish")}</a></button>
           </div>
         </SwiperSlide>
 
@@ -143,7 +143,7 @@ export default function App() {
               <li><TbClockHour3Filled /> {t("Tezkor ishlash vaqti")}</li>
               <li><GoCheck /> {t("Ishonchli yordam")}</li>
              </ul>
-             <button><a href="#">{t("Joy band qilish")}</a></button>
+             <button><a href="#concat">{t("Joy band qilish")}</a></button>
           </div>
         </SwiperSlide>
 
@@ -160,7 +160,7 @@ export default function App() {
               <li><TbClockHour3Filled /> {t("Tezkor ishlash vaqti")}</li>
               <li><GoCheck /> {t("Ishonchli yordam")}</li>
              </ul>
-             <button><a href="#">{t("Joy band qilish")}</a></button>
+             <button><a href="#concat">{t("Joy band qilish")}</a></button>
           </div>
         </SwiperSlide>
 

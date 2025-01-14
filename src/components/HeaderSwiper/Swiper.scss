@@ -70,9 +70,13 @@ $text-color: #fff;
           border-radius: 26px;
           background: $bg-color;
           border: none;
-          color: white;
           font-size: 17px;
           font-family: "Poppins", sans-serif;
+
+          a{
+          color: white;
+
+          }
         }
       }
 
@@ -125,10 +129,14 @@ $text-color: #fff;
             padding: 15px 40px;
             border: none;
             background: $bg-color;
-            color: white;
             border-radius: 26px;
             font-family: "Poppins", sans-serif;
             font-size: 15px;
+
+            a{
+            color: white;
+            cursor: pointer;
+            }
           }
         }
       }

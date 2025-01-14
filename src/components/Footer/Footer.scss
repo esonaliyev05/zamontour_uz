@@ -52,11 +52,19 @@ $font: "Poppins", sans-serif;
                 font-weight: 600;
                 cursor: pointer;
 
+                a{
+                    color: #fff;
+                }
+
 
 
                 &:hover{
                     background: #fff;
-                    color: #22b3c1;
+
+                    a{
+                        color: #22b3c1;
+                    }
+                  
                 }
             }
 

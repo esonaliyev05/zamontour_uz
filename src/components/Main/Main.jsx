@@ -17,8 +17,8 @@ const Main = () => {
   };
   return (
     <main>
-      <div className="container">
-        <div className="main-swiper" id="tours">
+      <div className="container" id="about">
+        <div className="main-swiper" >
           <div className="text">
             <h1>{t("Eng Yaxshi Haftalik Takliflarimiz")}</h1>
 
@@ -38,7 +38,7 @@ const Main = () => {
           <MainSwiper />
         </div>
 
-       <div className="main-parent-explore" id="about">
+       <div className="main-parent-explore" id="tours">
   <div className="Explore">
     <div className="text">
       <h1>{t('Chiptalarni biz bilan arzon va oson toping')}</h1>

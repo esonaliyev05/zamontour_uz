@@ -89,7 +89,7 @@ export default function App() {
                 </li>
               </ul>
             </div>
-            <button id="concat">
+            <button >
               <a href="#concat">{t('joy band qilish')}</a>
             </button>
           </div>

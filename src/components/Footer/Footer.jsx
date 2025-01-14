@@ -14,7 +14,7 @@ const Footer = () => {
               {t('Sayohat qilishni xohlaysizmi?')}
               <span>{t('Unda biz bilan hoziroq bog`laning')}</span>
             </h1>
-            <button>{t('Bog`lanish')}</button>
+            <button ><a href="#concat">{t('Bog`lanish')}</a> </button>
           </div>
         </div>
 

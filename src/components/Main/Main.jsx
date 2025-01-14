@@ -111,7 +111,7 @@ const Main = () => {
           <p><span><TiHome /></span> $1.100.200</p>
         </div>
 
-        <a href="">{t('Need Directions ?')} <span>→</span> </a>
+        <a href="">{t('Yo\'nalish kerakmi?')} <span>→</span> </a>
       </div>
     </div>
 
@@ -137,7 +137,7 @@ const Main = () => {
           <p><span><TiHome /></span> $1.100.200</p>
         </div>
 
-        <a href="">{t('Need Directions ?')} <span>→</span> </a>
+        <a href="">{t('Yo\'nalish kerakmi?')} <span>→</span> </a>
       </div>
     </div>
 
@@ -163,7 +163,7 @@ const Main = () => {
           <p><span><TiHome /></span> $1.100.200</p>
         </div>
 
-        <a href="">{t('Need Directions ?')} <span>→</span> </a>
+        <a href="">{t('Yo\'nalish kerakmi?')} <span>→</span> </a>
       </div>
     </div>
 
@@ -189,7 +189,7 @@ const Main = () => {
           <p><span><TiHome /></span> $1.100.200</p>
         </div>
 
-        <a href="">{t('Need Directions ?')} <span>→</span> </a>
+        <a href="">{t('Yo\'nalish kerakmi?')} <span>→</span> </a>
       </div>
     </div>
   </div>

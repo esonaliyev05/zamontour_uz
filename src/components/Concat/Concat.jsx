@@ -17,6 +17,9 @@ const Concat = () => {
     visa: ''
   });
 
+  const [showModal, setShowModal] = useState(false); // Modalni ko'rsatish uchun
+  const [modalMessage, setModalMessage] = useState(''); // Modal xabari
+
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
@@ -31,11 +34,12 @@ const Concat = () => {
       Visa turi: ${formData.visa}
     `;
 
-    const botToken = "7819510076:AAE32MgphCBBzO9aSU5XDJzCNKusb0vd_1w"; // Fetch from environment variables
-    const chatId = 6992354984; // Fetch from environment variables
+    const botToken = "7819510076:AAE32MgphCBBzO9aSU5XDJzCNKusb0vd_1w";
+    const chatId = 6992354984;
 
     if (!botToken || !chatId) {
-      alert(t('Telegram bot token yoki chat ID topilmadi!'));
+      setModalMessage(t('Telegram bot token yoki chat ID topilmadi!'));
+      setShowModal(true);
       return;
     }
 
@@ -43,8 +47,9 @@ const Concat = () => {
     
     try {
       await fetch(url);
-      alert(t('Xabar yuborildi!'));
-      setFormData({ // Formani tozalash
+      setModalMessage(t('Xabar yuborildi!'));
+      setShowModal(true);
+      setFormData({
         name: '',
         number: '',
         guests: '',
@@ -53,7 +58,8 @@ const Concat = () => {
         visa: ''
       });
     } catch (error) {
-      alert(t('Xabar yuborishda xatolik yuz berdi.'));
+      setModalMessage(t('Xabar yuborishda xatolik yuz berdi.'));
+      setShowModal(true);
     }
   };
 
@@ -69,53 +75,48 @@ const Concat = () => {
           <p>{t("O'zingiz yoqtirganingizni tanlang")}</p>
           <hr />
           <h1>{t("O'z joyingizni band qiling")}</h1>
-
           <button>{t("Ko'proq bilish...")}</button>
         </div>
-
-       
       </div>
+      
       <div className="concat-box">
-          <div className="box">
-            <div className="icon">
-              <FaPhoneAlt />
-            </div>
-
-            <h3>{t("Telefon raqam")}</h3>
-            <p>+998 99 299 99 96</p>
+        <div className="box">
+          <div className="icon">
+            <FaPhoneAlt />
           </div>
-          <div className="box">
-            <div className="icon">
-              <MdEmail />
-            </div>
-
-            <h3>{t("Bizga email orqali bog'laning")}</h3>
-            <p>zamonbiznestour@mail.ru</p>
-          </div>
-          <div className="box">
-            <div className="icon">
-              <FaMapMarker />
-            </div>
-
-            <h3>{t("Ofisimizga tashrif buyuring")}</h3>
-            <p>15/25, Chilanzar - 9, Tashkent city</p>
-          </div>
+          <h3>{t("Telefon raqam")}</h3>
+          <p>+998 99 299 99 96</p>
         </div>
+        <div className="box">
+          <div className="icon">
+            <MdEmail />
+          </div>
+          <h3>{t("Bizga email orqali bog'laning")}</h3>
+          <p>zamonbiznestour@mail.ru</p>
+        </div>
+        <div className="box">
+          <div className="icon">
+            <FaMapMarker />
+          </div>
+          <h3>{t("Ofisimizga tashrif buyuring")}</h3>
+          <p>15/25, Chilanzar - 9, Tashkent city</p>
+        </div>
+      </div>
 
       <div className="container">
         <div className="maps">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11960.483246752573!2d69.2350!3d41.3195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef3b4c7085e85%3A0xdeb7632ec6801b88!2sQo'qon%20City!5e0!3m2!1sen!2s!4v1699700000000"
-            allowfullscreen=""
+            allowFullScreen=""
             className="map"
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
+            referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
 
         <div className="form-container">
           <h4>
-            {t("O'z")}<em>   {t("joyingizni")}</em> {t("band")}<em>  {t("qiling")}</em>
+            {t("O'z")}<em>{t("joyingizni")}</em> {t("band")}<em>{t("qiling")}</em>
           </h4>
 
           <form onSubmit={handleSubmit} className="form-parent">
@@ -217,6 +218,16 @@ const Concat = () => {
           </form>
         </div>
       </div>
+
+      {/* Modal */}
+      {showModal && (
+        <div className="modal-overlay">
+          <div className="modal">
+            <p>{modalMessage}</p>
+            <button onClick={() => setShowModal(false)}>{t("Yopish")}</button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

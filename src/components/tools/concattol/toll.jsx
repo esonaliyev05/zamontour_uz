@@ -8,8 +8,8 @@ const Toll = () => {
     const imageData = [
       {
         icon: <TbBorderCorners/>,
-        title: 'Nanjing',
-        population: '2M',
+        title: 'Dubai',
+        population: 'Population: 2M',
         imageUrl: 'Toll/antalya.jpg'
       },
       {
@@ -53,7 +53,7 @@ const Toll = () => {
             <img src={item.imageUrl} alt={item.title} className="image" />
             <div className="image-info">
                 <div className="icon">{item.icon}</div>
-                <h3 className={`image-title ${activeIndex === index ? 'show' : 'hide'}`}>{item.title}</h3>
+                <h3 className={`image-title ${activeIndex === index ? 'show' : 'hide'}`}>{item.title}</h3><br />
                 <p className={`image-population ${activeIndex === index ? 'show' : 'hide'}`}>{`Population: ${item.population}`}</p>
             </div>
           </div>

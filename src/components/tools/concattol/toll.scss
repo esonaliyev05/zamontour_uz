@@ -18,16 +18,7 @@
         // opacity: 0.8;
       
     
-        .image-title {
-            font-weight: bold;
-            position: relative;
     
-          }
-      
-          .image-population {
-            font-size: 0.9rem;
-    
-          }
     
         &.active {
           width: 535px; /* Faollashgan div kattaroq bo'lsin */
@@ -67,14 +58,30 @@
             border-radius: 50%;
             position: relative;
           }
+
+          .image-title {
+            font-weight: bold;
+            position: relative;
+              transition: opacity 0.3s ease;
+              font-family: Arial, Helvetica, sans-serif;
+              
+            }
+            
+            .image-population {
+              font-weight: bold;
+              font-size: 0.9rem;
+              font-family: Arial, Helvetica, sans-serif;
+              display: block;
+
     
-        .image-title,
-        .image-population {
-          font-weight: bold;
-          font-size: 1.3rem;
-          transition: opacity 0.3s ease;
-          font-family: Arial, Helvetica, sans-serif;
-        }
+          }
+    
+        // .image-title,
+        // .image-population {
+        //   font-weight: bold;
+        //   font-size: 1.3rem;
+        
+        // }
     
         /* Elementlarni yashirish */
         .hide {

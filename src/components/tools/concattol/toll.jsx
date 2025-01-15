@@ -10,31 +10,31 @@ const Toll = () => {
         icon: <TbBorderCorners/>,
         title: 'Nanjing',
         population: '2M',
-        imageUrl: 'public/Toll/antalya.jpg'
+        imageUrl: 'Toll/antalya.jpg'
       },
       {
         icon: <TbBorderCorners/>,
         title: 'Zhangjiajie',
         population: '1M',
-        imageUrl: 'public/Toll/best-05.jpg'
+        imageUrl: 'Toll/best-05.jpg'
       },
       {
         icon: <TbBorderCorners/>,
         title: 'Hangzhou',
         population: '3M',
-        imageUrl: 'public/Toll/dubai.jpg'
+        imageUrl: 'Toll/dubai.jpg'
       },
       {
         icon: <TbBorderCorners/>,
         title: 'Bamboo Forest',
         population: '500K',
-        imageUrl: 'public/Toll/istanbul.jpg'
+        imageUrl: 'Toll/istanbul.jpg'
       },
       {
         icon: <TbBorderCorners/>,
         title: 'Bamboo Forest',
         population: '500K',
-        imageUrl: 'public/Toll/sharm.jpg'
+        imageUrl: 'Toll/sharm.jpg'
       }
     ];
   

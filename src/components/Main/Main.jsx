@@ -7,6 +7,7 @@ import { FaGlobe } from "react-icons/fa";
 import { TiHome } from "react-icons/ti";
 import { t } from "i18next";
 import { useTranslation } from "react-i18next";
+import Toll from "../tools/concattol/toll";
 
 const Main = () => {
   const [activeIndex, setActiveIndex] = useState(null); // Faol elementni boshqarish uchun holat
@@ -197,6 +198,7 @@ const Main = () => {
 
 
       </div>
+      <Toll/>
     </main>
   );
 };

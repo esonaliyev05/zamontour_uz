@@ -1,0 +1,516 @@
+.image-gallery {
+    width: 1200px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 0 auto;
+
+    .image-card {
+        position: relative;
+        cursor: pointer;
+        border-radius: 25px;
+        overflow: hidden;
+        width: 60px;
+        height: 400px;
+        transition: transform 0.3s ease, width 0.3s ease;
+        // opacity: 0.8;
+      
+    
+        .image-title {
+            font-weight: bold;
+            position: relative;
+    
+          }
+      
+          .image-population {
+            font-size: 0.9rem;
+    
+          }
+    
+        &.active {
+          width: 535px; /* Faollashgan div kattaroq bo'lsin */
+          opacity: 1;
+    
+    
+        }
+      
+        .image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          border-radius: 15px;
+        //   transition: opacity 0.3s ease;
+        }
+      
+     .image-info {
+        position: absolute;
+        bottom: 10px;
+        color: white;
+        padding: 10px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+          .icon{
+            min-width: 40px;
+            height: 40px;
+            background: white;
+            font-size: 25px;
+            color: #22b3c1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            position: relative;
+          }
+    
+        .image-title,
+        .image-population {
+          font-weight: bold;
+          font-size: 1.3rem;
+          transition: opacity 0.3s ease;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+    
+        /* Elementlarni yashirish */
+        .hide {
+          opacity: 0;  /* Ko‘rinmas qilish */
+          visibility: hidden;  /* Ko‘rinmas qilish */
+          transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+    
+        /* Active div uchun h3 va p ko‘rsatilishi */
+        .show {
+          opacity: 1;  /* Ko‘rinadigan qilish */
+          visibility: visible;  /* Ko‘rinadigan qilish */
+          transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+      }
+
+  }
+  
+}
+  @media screen and (max-width: 477px){
+    .image-gallery {
+      width: 97%;
+      height: 450px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      margin: 0 auto;
+  
+      .image-card {
+          position: relative;
+          cursor: pointer;
+          border-radius: 25px;
+          overflow: hidden;
+          width: 65px;
+          height: 400px;
+          transition: transform 0.3s ease, width 0.3s ease;
+          // opacity: 0.8;
+        
+      
+          .image-title {
+              font-weight: bold;
+              position: relative;
+      
+            }
+        
+            .image-population {
+              font-size: 0.9rem;
+      
+            }
+      
+          &.active {
+            width: 220px; /* Faollashgan div kattaroq bo'lsin */
+            opacity: 1;
+      
+      
+          }
+        
+          .image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+          //   transition: opacity 0.3s ease;
+          }
+        
+       .image-info {
+          position: absolute;
+          bottom: 10px;
+          color: white;
+          padding: 10px;
+          border-radius: 10px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 20px;
+  
+            .icon{
+              min-width: 40px;
+              height: 40px;
+              background: white;
+              font-size: 25px;
+              color: #22b3c1;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 50%;
+              position: relative;
+            }
+      
+          .image-title,
+          .image-population {
+            font-weight: bold;
+            font-size: 1.3rem;
+            transition: opacity 0.3s ease;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+      
+          /* Elementlarni yashirish */
+          .hide {
+            opacity: 0;  /* Ko‘rinmas qilish */
+            visibility: hidden;  /* Ko‘rinmas qilish */
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+          }
+      
+          /* Active div uchun h3 va p ko‘rsatilishi */
+          .show {
+            opacity: 1;  /* Ko‘rinadigan qilish */
+            visibility: visible;  /* Ko‘rinadigan qilish */
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+          }
+        }
+
+        &:nth-child(4){
+          display: none;
+        }
+        &:nth-child(5){
+          display: none;
+        }
+  
+    }
+
+
+    
+  }
+    
+  }
+  @media screen and (min-width: 447px) and (max-width: 769px) {
+    .image-gallery {
+      width: 90%;
+      height: 450px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin: 0 auto;
+
+  
+      .image-card {
+          position: relative;
+          cursor: pointer;
+          border-radius: 25px;
+          overflow: hidden;
+          width: 60px;
+          height: 400px;
+          transition: transform 0.3s ease, width 0.3s ease;
+          // opacity: 0.8;
+        
+      
+          .image-title {
+              font-weight: bold;
+              position: relative;
+      
+            }
+        
+            .image-population {
+              font-size: 0.9rem;
+      
+            }
+      
+          &.active {
+            width: 300px; /* Faollashgan div kattaroq bo'lsin */
+            opacity: 1;
+      
+      
+          }
+        
+          .image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+          //   transition: opacity 0.3s ease;
+          }
+        
+       .image-info {
+          position: absolute;
+          bottom: 10px;
+          color: white;
+          padding: 10px;
+          border-radius: 10px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 20px;
+  
+            .icon{
+              min-width: 40px;
+              height: 40px;
+              background: white;
+              font-size: 25px;
+              color: #22b3c1;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 50%;
+              position: relative;
+            }
+      
+          .image-title,
+          .image-population {
+            font-weight: bold;
+            font-size: 1.3rem;
+            transition: opacity 0.3s ease;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+      
+          /* Elementlarni yashirish */
+          .hide {
+            opacity: 0;  /* Ko‘rinmas qilish */
+            visibility: hidden;  /* Ko‘rinmas qilish */
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+          }
+      
+          /* Active div uchun h3 va p ko‘rsatilishi */
+          .show {
+            opacity: 1;  /* Ko‘rinadigan qilish */
+            visibility: visible;  /* Ko‘rinadigan qilish */
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+          }
+        }
+
+        &:nth-child(4){
+          display: none;
+        }
+        &:nth-child(5){
+          display: none;
+        }
+  
+    }
+
+
+    
+  }
+  }
+  @media screen and (min-width: 769px) and (max-width: 960px) {
+    .image-gallery {
+      width: 90%;
+      height: 450px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin: 0 auto;
+
+  
+      .image-card {
+          position: relative;
+          cursor: pointer;
+          border-radius: 25px;
+          overflow: hidden;
+          width: 60px;
+          height: 400px;
+          transition: transform 0.3s ease, width 0.3s ease;
+          // opacity: 0.8;
+        
+      
+          .image-title {
+              font-weight: bold;
+              position: relative;
+      
+            }
+        
+            .image-population {
+              font-size: 0.9rem;
+      
+            }
+      
+          &.active {
+            width: 350px; /* Faollashgan div kattaroq bo'lsin */
+            opacity: 1;
+      
+      
+          }
+        
+          .image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+          //   transition: opacity 0.3s ease;
+          }
+        
+       .image-info {
+          position: absolute;
+          bottom: 10px;
+          color: white;
+          padding: 10px;
+          border-radius: 10px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 20px;
+  
+            .icon{
+              min-width: 40px;
+              height: 40px;
+              background: white;
+              font-size: 25px;
+              color: #22b3c1;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 50%;
+              position: relative;
+            }
+      
+          .image-title,
+          .image-population {
+            font-weight: bold;
+            font-size: 1.3rem;
+            transition: opacity 0.3s ease;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+      
+          /* Elementlarni yashirish */
+          .hide {
+            opacity: 0;  /* Ko‘rinmas qilish */
+            visibility: hidden;  /* Ko‘rinmas qilish */
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+          }
+      
+          /* Active div uchun h3 va p ko‘rsatilishi */
+          .show {
+            opacity: 1;  /* Ko‘rinadigan qilish */
+            visibility: visible;  /* Ko‘rinadigan qilish */
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+          }
+        }
+     
+  
+    }
+
+
+    
+  } 
+  }
+  @media screen and (min-width: 960px) and (max-width: 1200px) {
+    .image-gallery {
+      width: 90%;
+      height: 450px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      margin: 0 auto;
+
+  
+      .image-card {
+          position: relative;
+          cursor: pointer;
+          border-radius: 25px;
+          overflow: hidden;
+          width: 60px;
+          height: 400px;
+          transition: transform 0.3s ease, width 0.3s ease;
+          // opacity: 0.8;
+        
+      
+          .image-title {
+              font-weight: bold;
+              position: relative;
+      
+            }
+        
+            .image-population {
+              font-size: 0.9rem;
+      
+            }
+      
+          &.active {
+            width: 60%; /* Faollashgan div kattaroq bo'lsin */
+            opacity: 1;
+      
+      
+          }
+        
+          .image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+          //   transition: opacity 0.3s ease;
+          }
+        
+       .image-info {
+          position: absolute;
+          bottom: 10px;
+          color: white;
+          padding: 10px;
+          border-radius: 10px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 20px;
+  
+            .icon{
+              min-width: 40px;
+              height: 40px;
+              background: white;
+              font-size: 25px;
+              color: #22b3c1;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 50%;
+              position: relative;
+            }
+      
+          .image-title,
+          .image-population {
+            font-weight: bold;
+            font-size: 1.3rem;
+            transition: opacity 0.3s ease;
+            font-family: Arial, Helvetica, sans-serif;
+          }
+      
+          /* Elementlarni yashirish */
+          .hide {
+            opacity: 0;  /* Ko‘rinmas qilish */
+            visibility: hidden;  /* Ko‘rinmas qilish */
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+          }
+      
+          /* Active div uchun h3 va p ko‘rsatilishi */
+          .show {
+            opacity: 1;  /* Ko‘rinadigan qilish */
+            visibility: visible;  /* Ko‘rinadigan qilish */
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+          }
+        }
+     
+  
+    }
+
+
+    
+  } 
+  }

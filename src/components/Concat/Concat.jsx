@@ -25,26 +25,35 @@ const Concat = () => {
   };
 
   const sendToTelegram = async () => {
-    const message = `
-      Ismingiz: ${formData.name}
-      Telefon: ${formData.number}
-      Necha kishisiz: ${formData.guests}
-      Uchish sanasi: ${formData.date}
-      Manzil: ${formData.destination}
-      Visa turi: ${formData.visa}
-    `;
-
-    const botToken = "7819510076:AAE32MgphCBBzO9aSU5XDJzCNKusb0vd_1w";
-    const chatId = 6992354984;
-
-    if (!botToken || !chatId) {
-      setModalMessage(t('Telegram bot token yoki chat ID topilmadi!'));
+    const {
+      name,
+      number,
+      guests = "1", // Default qiymat
+      date,
+      destination = "Antalya", // Default qiymat
+      visa = "Europe", // Default qiymat
+    } = formData;
+  
+    if (!name || !number || !date) {
+      setModalMessage(t("Iltimos, barcha maydonlarni to'ldiring!"));
       setShowModal(true);
       return;
     }
-
+  
+    const message = `
+      Ismingiz: ${name}
+      Telefon: ${number}
+      Necha kishisiz: ${guests}
+      Uchish sanasi: ${date}
+      Manzil: ${destination}
+      Visa turi: ${visa}
+    `;
+  
+    const botToken = "7819510076:AAE32MgphCBBzO9aSU5XDJzCNKusb0vd_1w";
+    const chatId = 6992354984;
+  
     const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
-    
+  
     try {
       await fetch(url);
       setModalMessage(t('Xabar yuborildi!'));
@@ -52,16 +61,17 @@ const Concat = () => {
       setFormData({
         name: '',
         number: '',
-        guests: '',
+        guests: '1', // Default qiymat
         date: '',
-        destination: '',
-        visa: ''
+        destination: 'Antalya', // Default qiymat
+        visa: 'Europe', // Default qiymat
       });
     } catch (error) {
       setModalMessage(t('Xabar yuborishda xatolik yuz berdi.'));
       setShowModal(true);
     }
   };
+  
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -221,7 +231,13 @@ const Concat = () => {
 
       {/* Modal */}
       {showModal && (
-        <div className="modal-overlay">
+        <div className="modal-overlay" >
+           
+           <div className="modal-fixed" onClick={() => setShowModal(false)}>
+
+           </div>
+
+
           <div className="modal">
             <p>{modalMessage}</p>
             <button onClick={() => setShowModal(false)}>{t("Yopish")}</button>

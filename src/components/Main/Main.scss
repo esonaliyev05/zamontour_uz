@@ -28,12 +28,15 @@ main{
                     font-family: "Poppins", sans-serif;
                     color: #2a2a2a;
                     text-transform: capitalize;
+                    font-weight: 800;
+                    text-shadow: 2px 3px 10px 6px gray;
+                    opacity: .9;
                 }
 
                 p{
                     width: 500px;
                     font-size: 16px;
-                    color: #595757;
+                    color: rgb(174, 170, 170);
                     font-family: "Poppins", sans-serif;
                     font-weight: 500;
                     margin: 30px auto;
@@ -56,12 +59,13 @@ main{
                     font-family: "Poppins", sans-serif;
                     color: #2a2a2a;
                     text-transform: capitalize;
+                    font-weight: 800;
                 }
 
                 p{
                     width: auto;
                     font-size: 16px;
-                    color: #7c7a7a;
+                    color: #b5afaf;
                     font-family: "Poppins", sans-serif;
                     font-weight: 500;
                     margin: 30px auto;
@@ -93,6 +97,8 @@ main{
                         font-family: $font;
                         text-transform: capitalize;
                         margin: 25px 0;
+                    font-weight: 800;
+
                     }
                     p{
                         font-family: $font;
@@ -127,6 +133,8 @@ main{
                             h2{
                                 color: $color;
                                 font-family: $font;
+                    font-weight: 800;
+
 
                                 span{
                                     color: #8e8d8d;
@@ -180,6 +188,8 @@ main{
                         font-family: $font;
                         text-transform: capitalize;
                         margin: 25px 0;
+                    font-weight: 800;
+
                     }
                     p{
                         font-family: $font;
@@ -217,6 +227,8 @@ main{
                             h2{
                                 color: $color;
                                 font-family: $font;
+                    font-weight: 800;
+
 
                                 span{
                                     color: #8e8d8d;

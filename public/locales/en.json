@@ -96,7 +96,13 @@
   "Barcha huquqlar zaxirlangan": "All rights reserved",
   "Yo'nalish kerakmi?" : "Need Directions ?",
   "Xabar yuborildi!": "Message sent successfully!",
-  "Xabar yuborishda xatolik yuz berdi.": "There was an error sending the message."
+  "Xabar yuborishda xatolik yuz berdi.": "There was an error sending the message.",
+  "Ismingiz:": "Your name:",
+  "Telefon:": "Phone:",
+  "Necha kishisiz:": "Number of people:",
+  "Uchish sanasi:": "Flight date:",
+  "Manzil:": "Destination:",
+  "Visa turi:": "Type of visa:"
 
           
         

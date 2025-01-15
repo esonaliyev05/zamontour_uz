@@ -54,7 +54,8 @@ $text-color: #fff;
           font-family: "Poppins", sans-serif;
           font-size: 25px;
           color: white;
-          font-weight: 600;
+          font-weight: bold;
+
         }
 
         h1 {
@@ -63,6 +64,7 @@ $text-color: #fff;
           color: white;
           font-weight: 600;
           margin: 35px 0;
+          font-weight: 800;
         }
 
         button {
@@ -102,14 +104,14 @@ $text-color: #fff;
             gap: 15px;
 
             .icon {
-              width: 50px;
-              height: 50px;
+              width: 55px;
+              height: 55px;
               border-radius: 50%;
               border: 1px solid $bg-color;
               display: flex;
               justify-content: center;
               align-items: center;
-              font-size: 25px;
+              font-size: 30px;
               color: $bg-color;
             }
 
@@ -121,6 +123,7 @@ $text-color: #fff;
               h2 {
                 color: $bg-color;
                 font-family: "Poppins", sans-serif;
+                font-weight: 800;
               }
             }
           }

@@ -41,12 +41,12 @@ const Concat = () => {
     }
   
     const message = `
-      Ismingiz: ${name}
-      Telefon: ${number}
-      Necha kishisiz: ${guests}
-      Uchish sanasi: ${date}
-      Manzil: ${destination}
-      Visa turi: ${visa}
+    ${t("Ismingiz")} ${name}
+    ${t("Telefon:")} ${number}
+    ${t("Necha kishisiz:")} ${guests}
+    ${t("Uchish sanasi:")} ${date}
+    ${t("Manzil:")} ${destination}
+    ${t("Visa turi:")} ${visa}
     `;
   
     const botToken = "7819510076:AAE32MgphCBBzO9aSU5XDJzCNKusb0vd_1w";

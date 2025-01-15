@@ -96,7 +96,13 @@
   "Barcha huquqlar zaxirlangan": "Все права защищены",
   "Yo'nalish kerakmi?" : "Нужны направления?",
   "Xabar yuborildi!": "Сообщение отправлено!",
-  "Xabar yuborishda xatolik yuz berdi.": "Произошла ошибка при отправке сообщения."
+  "Xabar yuborishda xatolik yuz berdi.": "Произошла ошибка при отправке сообщения.",
+  "Ismingiz:": "Ваше имя:",
+  "Telefon:": "Телефон:",
+  "Necha kishisiz:": "Сколько человек:",
+  "Uchish sanasi:": "Дата вылета:",
+  "Manzil:": "Направление:",
+  "Visa turi:": "Тип визы:"
           
         
 }

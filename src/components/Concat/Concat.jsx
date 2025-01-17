@@ -9,69 +9,63 @@ const Concat = () => {
   const { t } = useTranslation();
 
   const [formData, setFormData] = useState({
-    name: '',
-    number: '',
-    guests: '',
-    date: '',
-    destination: '',
-    visa: ''
+    name: "",
+    number: "",
+    guests: "",
+    date: "",
+    destination: "",
+    visa: "",
   });
 
-  const [showModal, setShowModal] = useState(false); // Modalni ko'rsatish uchun
-  const [modalMessage, setModalMessage] = useState(''); // Modal xabari
+  const [showModal, setShowModal] = useState(false);
+  const [modalMessage, setModalMessage] = useState("");
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const sendToTelegram = async () => {
-    const {
-      name,
-      number,
-      guests = "1", // Default qiymat
-      date,
-      destination = "Antalya", // Default qiymat
-      visa = "Europe", // Default qiymat
-    } = formData;
-  
-    if (!name || !number || !date) {
+    const { name, number, guests, date, destination, visa } = formData;
+
+    if (!name || !number || !guests || !date || !destination || !visa) {
       setModalMessage(t("Iltimos, barcha maydonlarni to'ldiring!"));
       setShowModal(true);
       return;
     }
-  
+
     const message = `
-    ${t("Ismingiz")} ${name}
-    ${t("Telefon:")} ${number}
-    ${t("Necha kishisiz:")} ${guests}
-    ${t("Uchish sanasi:")} ${date}
-    ${t("Manzil:")} ${destination}
-    ${t("Visa turi:")} ${visa}
+    ${t("Ismingiz")}: ${name}
+    ${t("Telefon")}: ${number}
+    ${t("Necha kishisiz")}: ${guests}
+    ${t("Uchish sanasi")}: ${date}
+    ${t("Manzil")}: ${destination}
+    ${t("Visa turi")}: ${visa}
     `;
-  
+
     const botToken = "7819510076:AAE32MgphCBBzO9aSU5XDJzCNKusb0vd_1w";
     const chatId = 6992354984;
-  
-    const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
-  
+
+    const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(
+      message
+    )}`;
+
     try {
       await fetch(url);
-      setModalMessage(t('Xabar yuborildi!'));
+      setModalMessage(t("Xabar yuborildi!"));
       setShowModal(true);
       setFormData({
-        name: '',
-        number: '',
-        guests: '1', // Default qiymat
-        date: '',
-        destination: 'Antalya', // Default qiymat
-        visa: 'Europe', // Default qiymat
+        name: "",
+        number: "",
+        guests: "",
+        date: "",
+        destination: "",
+        visa: "",
       });
     } catch (error) {
-      setModalMessage(t('Xabar yuborishda xatolik yuz berdi.'));
+      setModalMessage(t("Xabar yuborishda xatolik yuz berdi."));
       setShowModal(true);
     }
   };
-  
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -88,7 +82,7 @@ const Concat = () => {
           <button>{t("Ko'proq bilish...")}</button>
         </div>
       </div>
-      
+
       <div className="concat-box">
         <div className="box">
           <div className="icon">
@@ -126,7 +120,9 @@ const Concat = () => {
 
         <div className="form-container">
           <h4>
-            {t("O'z")}<em>{t("joyingizni")}</em> {t("band")}<em>{t("qiling")}</em>
+            {t("O'z")}
+            <em>{t("joyingizni")}</em> {t("band")}
+            <em>{t("qiling")}</em>
           </h4>
 
           <form onSubmit={handleSubmit} className="form-parent">
@@ -163,7 +159,11 @@ const Concat = () => {
                 name="guests"
                 value={formData.guests}
                 onChange={handleChange}
+                required
               >
+                <option value="" hidden style={{ color: "gray" }}>
+                  {t("Tanlang")}
+                </option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -184,13 +184,19 @@ const Concat = () => {
             </div>
 
             <div className="form">
-              <label htmlFor="chooseCategory">{t("Manzilingizni tanlang")}</label>
+              <label htmlFor="chooseCategory">
+                {t("Manzilingizni tanlang")}
+              </label>
               <select
                 id="chooseCategory"
                 name="destination"
                 value={formData.destination}
                 onChange={handleChange}
+                required
               >
+                <option value="" hidden style={{ color: "gray" }}>
+                  {t("Tanlang")}
+                </option>
                 <option value="Antalya">{t("Antalya")}</option>
                 <option value="Istanbul">{t("Istanbul")}</option>
                 <option value="Dubai">{t("Dubai")}</option>
@@ -209,13 +215,19 @@ const Concat = () => {
                 id="visa"
                 value={formData.visa}
                 onChange={handleChange}
+                required
               >
+                <option value="" hidden style={{ color: "gray" }}>
+                  {t("Tanlang")}
+                </option>
                 <option value="Europe">{t("Europe")}</option>
                 <option value="England">{t("England")}</option>
                 <option value="Japan">{t("Japan")}</option>
                 <option value="Oman">{t("Oman")}</option>
                 <option value="USA">{t("USA")}</option>
-                <option value="Saudiya Arabistoni">{t("Saudi Arabia")}</option>
+                <option value="Saudiya Arabistoni">
+                  {t("Saudi Arabia")}
+                </option>
                 <option value="India">{t("India")}</option>
                 <option value="China">{t("China")}</option>
                 <option value="HongKong">{t("Hong Kong")}</option>
@@ -226,24 +238,17 @@ const Concat = () => {
               <button type="submit">{t("Band qilish")}</button>
             </div>
           </form>
+
+          {showModal && (
+            <div className="modal-overlay">
+              <div className="modal">
+                <p>{modalMessage}</p>
+                <button onClick={() => setShowModal(false)}>{t("OK")}</button>
+              </div>
+            </div>
+          )}
         </div>
       </div>
-
-      {/* Modal */}
-      {showModal && (
-        <div className="modal-overlay" >
-           
-           <div className="modal-fixed" onClick={() => setShowModal(false)}>
-
-           </div>
-
-
-          <div className="modal">
-            <p>{modalMessage}</p>
-            <button onClick={() => setShowModal(false)}>{t("Yopish")}</button>
-          </div>
-        </div>
-      )}
     </div>
   );
 };

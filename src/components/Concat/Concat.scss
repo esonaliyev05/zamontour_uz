@@ -270,6 +270,10 @@ $font: "Poppins", sans-serif;
         align-items: center;
         font-family: Arial, Helvetica, sans-serif;
         z-index: 6;
+        animation: modalFadeIn 0.3s ease-in-out;
+        /* Modal paydo bo'lishi uchun animatsiya */
+      
+        
 
         p{
             font-size: 25px;
@@ -295,6 +299,17 @@ $font: "Poppins", sans-serif;
 
       .modal button:hover {
         background-color: #0056b3;
+      }
+
+      @keyframes modalFadeIn {
+        from {
+          opacity: 0;
+          transform: scale(0.8); /* Kichraytirilgan holatda boshlanadi */
+        }
+        to {
+          opacity: 1;
+          transform: scale(1); /* Asl o'lchamga qaytadi */
+        }
       }
       
   

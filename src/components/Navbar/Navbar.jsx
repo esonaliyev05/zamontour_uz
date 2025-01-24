@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Navbar.scss';
 import { FaTelegram } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
@@ -20,10 +20,37 @@ const Navbar = () => {
     });
   };
   
+  const [isHidden, setIsHidden] = useState(false);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+
+    if (currentScrollY > 350) {
+      if (currentScrollY > lastScrollY) {
+        setIsHidden(true);
+      } else {
+        setIsHidden(false);
+      }
+    } else {
+      setIsHidden(false);
+    }
+
+    setLastScrollY(currentScrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      // Tozalash funksiyasi
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY]);
+
   
 
   return (
-    <nav>
+    <nav className={`navbar ${isHidden ? "hidden" : ""}`}>
       <div className="container">
         <div className="logo">
           <img src="/Navbar/zamon.logo.svg"  loading="lazy" alt="Description" />

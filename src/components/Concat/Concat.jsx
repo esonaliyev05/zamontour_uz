@@ -225,9 +225,7 @@ const Concat = () => {
                 <option value="Japan">{t("Japan")}</option>
                 <option value="Oman">{t("Oman")}</option>
                 <option value="USA">{t("USA")}</option>
-                <option value="Saudiya Arabistoni">
-                  {t("Saudi Arabia")}
-                </option>
+                <option value="Saudiya Arabistoni">{t("Saudi Arabia")}</option>
                 <option value="India">{t("India")}</option>
                 <option value="China">{t("China")}</option>
                 <option value="HongKong">{t("Hong Kong")}</option>

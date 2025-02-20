@@ -46,13 +46,12 @@ const Navbar = () => {
   }, [lastScrollY]);
 
   return (
-    <nav className={`navbar ${isHidden ? "hidden" : ""} `} >
+    <nav className={`navbar ${isHidden ? "hidden" : ""} `}>
       <div className="container  animate__animated animate__bounceInRight">
         <div className="logo">
-        
           <a href="#">
-          {/* <img src="public/Navbar/search (1).htm" alt="" /> */}
-           
+            {/* <img src="public/Navbar/search (1).htm" alt="" /> */}
+
             <h1>Aventour</h1>
           </a>
         </div>

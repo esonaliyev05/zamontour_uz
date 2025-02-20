@@ -1,4 +1,4 @@
-$bg-color: #22b3c1;
+$bg-color: #2cafbb;
 $text-color: #fff;
 
 .HeaderSwiper {
@@ -7,6 +7,7 @@ $text-color: #fff;
   transition: all .2s linear !important;
   overflow: hidden;
   top: 70px;
+
   .chiled-swiper {
       background-position: center;
       background-size: cover;
@@ -16,21 +17,21 @@ $text-color: #fff;
     //   margin-top: 70px;
 
     &:first-child {
-      background: url(../../../public/Header/istanbul.jpg) center center no-repeat;
+      background: url(../../../public/HeaderImg/Turkey.jpg) center center no-repeat;
       background-size: cover;
     }
     &:nth-child(2) {
-      background: url(../../../public/Header/dubai2.jpg) center center no-repeat;
+      background: url(../../../public/HeaderImg/Dubay.jpg) center center no-repeat;
       background-size: cover;
     }
     &:nth-child(3) {
-      background: url(../../../public/Header/antalya2.jpg);
+      background: url(../../../public/HeaderImg/Filipin.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
     }
     &:nth-child(4) {
-      background: url(../../../public/Header/sharm.jpg);
+      background: url(../../../public/HeaderImg/photo_2023-05-06_02-50-37.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;

@@ -8,7 +8,7 @@ $text-color: #fff;
   position: fixed;
   z-index: 9;
   transition: all .2s linear;
-  opacity: .8;
+  opacity: .9;
   backdrop-filter: blur(5px);
 
   &.hidden{
@@ -49,14 +49,39 @@ $text-color: #fff;
         text-transform: capitalize;
         -webkit-font-smoothing: antialiased;
         font-family: 'Poppins', sans-serif;
-        
+  
+        position: relative;
+        padding: 10px;
+        color: white;
+        cursor: pointer;
+        font-size: 18px;
+
         a {
           color: $text-color;
           transition: all .1s linear;
 
           &:hover{
-            opacity: .7;
+            opacity: .9;
           }
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 0;
+            height: 3px;
+            background: #fff;
+            transition: all 0.4s ease-in-out;
+            transform: translateX(-50%);
+            opacity: .7;
+            
+
+        }
+
+        &:hover::after {
+            width: 100%;
         }
       }
     }

@@ -36,6 +36,13 @@ $text-color: #fff;
       background-size: cover;
       background-position: center;
     }
+    &:nth-child(5) {
+      background: url(../../../public/Main-swiper/photo_2025-02-20_22-05-23.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      
+    }
 
     .container {
       width: 1200px;

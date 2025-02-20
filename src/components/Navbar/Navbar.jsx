@@ -4,20 +4,18 @@ import { FaTelegram } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { HiBars3BottomLeft } from "react-icons/hi2";
 import { HiOutlineX } from "react-icons/hi";
-import { useTranslation } from "react-i18next"; // useTranslation hook'ini import qilish
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const { t, i18n } = useTranslation(); // useTranslation hook'ini chaqirish
+  const { t, i18n } = useTranslation();
 
   const handleRedirect = (url) => {
     window.location.href = url;
   };
 
   const changeLanguage = (lang) => {
-    i18n.changeLanguage(lang).then(() => {
-      // window.location.reload();
-    });
+    i18n.changeLanguage(lang).then(() => {});
   };
 
   const [isHidden, setIsHidden] = useState(false);

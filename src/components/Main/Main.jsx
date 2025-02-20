@@ -47,7 +47,7 @@ const Main = () => {
     </div>
 
     <div className="explore-box">
-      <img src="Explore-main/afr.jpg" alt="masseg" />
+      <img src="Main-img/photo_2025-02-20_22-12-36.jpg" alt="masseg" />
 
       <div className="text">
         <div className="top">
@@ -66,7 +66,7 @@ const Main = () => {
     </div>
 
     <div className="explore-box">
-      <img src="Explore-main/airplane.jpg" alt="masseg" />
+      <img src="Main-img/photo_2025-02-20_22-13-18.jpg" alt="masseg" />
 
       <div className="text">
         <div className="top">
@@ -91,7 +91,7 @@ const Main = () => {
     </div>
 
     <div className="countres-box">
-      <img src="Explore-main/dubai2.jpg" alt="" />
+      <img src="Main-swiper/photo_2025-02-20_22-28-50.jpg" alt="" />
       <div className="text">
         <div className="top">
           <h2>
@@ -117,7 +117,7 @@ const Main = () => {
     </div>
 
     <div className="countres-box">
-      <img src="Explore-main/country-02.jpg" alt="" />
+      <img src="HeaderImg/photo_2023-05-06_02-50-37.jpg" alt="" />
       <div className="text">
         <div className="top">
           <h2>
@@ -169,7 +169,7 @@ const Main = () => {
     </div>
 
     <div className="countres-box">
-      <img src="Explore-main/sharm2.jpg" alt="" />
+      <img src="HeaderImg/Turkey (2).jpg" alt="" />
       <div className="text">
         <div className="top">
           <h2>

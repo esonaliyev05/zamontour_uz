@@ -214,6 +214,51 @@ export default function App() {
             </div>
           </div>
         </SwiperSlide>
+        <SwiperSlide className="chiled-swiper">
+          <div className="container">
+            <div className="swiper-text">
+              <p>{t("Go'zal shaharga bir nazar tashlang")}:</p>
+
+              <h1>{t("Hindiston")}</h1>
+
+              <button><a href="#concat">{t("U yerga boring")}</a></button>
+            </div>
+
+            <div className="swiper-more">
+              <div className="boxses">
+                <div className="box">
+                  <div className="icon">
+                    <FaUser />
+                  </div>
+                  <div className="text">
+                    <p>{t("Aholisi")}:</p>
+                    <h2>15.66 M</h2>
+                  </div>
+                </div>
+                <div className="box">
+                  <div className="icon">
+                    <FaGlobe />
+                  </div>
+                  <div className="text">
+                    <p>{t("Maydoni")}:</p>
+                    <h2>881.290 KM2</h2>
+                  </div>
+                </div>
+                <div className="box">
+                  <div className="icon">
+                    <AiFillHome />
+                  </div>
+                  <div className="text">
+                    <p>{t("O'rtacha narxi")}:</p>
+                    <h2>$4.00.200</h2>
+                  </div>
+                </div>
+
+                <button ><a href="#concat">{t("Batafsil ma'lumot")}</a></button>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
       </Swiper>
     </>
   );

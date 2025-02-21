@@ -32,11 +32,14 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`navbar ${scrolled ? "scrolled" : ""} ${isHidden ? "hidden" : ""}`}>
+    <nav
+      className={`navbar ${scrolled ? "scrolled" : ""} ${
+        isHidden ? "hidden" : ""
+      }`}
+    >
       <div className="container  animate__animated animate__bounceInRight">
         <div className="logo">
           <a href="#">
-
             <h1>Aventour</h1>
           </a>
         </div>

@@ -34,6 +34,51 @@ export default function App() {
         modules={[EffectFade, Navigation, Pagination, Autoplay]}
         className="HeaderSwiper"
       >
+         <SwiperSlide className="chiled-swiper">
+          <div className="container">
+            <div className="swiper-text">
+              <p>{t("Go'zal shaharga bir nazar tashlang")}</p>
+
+              <h1>{t("Dubai")}</h1>
+
+              <button><a href="#concat">{t("U yerga boring")}</a></button>
+            </div>
+
+            <div className="swiper-more">
+              <div className="boxses">
+                <div className="box">
+                  <div className="icon">
+                    <FaUser />
+                  </div>
+                  <div className="text">
+                    <p>{t("Aholisi")}:</p>
+                    <h2>69.86 M</h2>
+                  </div>
+                </div>
+                <div className="box">
+                  <div className="icon">
+                    <FaGlobe />
+                  </div>
+                  <div className="text">
+                    <p>{t("Maydoni")}:</p>
+                    <h2>513.120 KM2</h2>
+                  </div>
+                </div>
+                <div className="box">
+                  <div className="icon">
+                    <AiFillHome />
+                  </div>
+                  <div className="text">
+                    <p>{t("O'rtacha narxi")}:</p>
+                    <h2>$165.450</h2>
+                  </div>
+                </div>
+
+                <button ><a href="#concat">{t("Batafsil ma'lumot")}</a></button>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
         <SwiperSlide className="chiled-swiper">
           <div className="container">
             <div className="swiper-text">
@@ -71,51 +116,6 @@ export default function App() {
                   <div className="text">
                     <p>{t("O'rtacha narxi")}:</p>
                     <h2>$946.000</h2>
-                  </div>
-                </div>
-
-                <button ><a href="#concat">{t("Batafsil ma'lumot")}</a></button>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide className="chiled-swiper">
-          <div className="container">
-            <div className="swiper-text">
-              <p>{t("Go'zal shaharga bir nazar tashlang")}</p>
-
-              <h1>{t("Dubai")}</h1>
-
-              <button><a href="#concat">{t("U yerga boring")}</a></button>
-            </div>
-
-            <div className="swiper-more">
-              <div className="boxses">
-                <div className="box">
-                  <div className="icon">
-                    <FaUser />
-                  </div>
-                  <div className="text">
-                    <p>{t("Aholisi")}:</p>
-                    <h2>69.86 M</h2>
-                  </div>
-                </div>
-                <div className="box">
-                  <div className="icon">
-                    <FaGlobe />
-                  </div>
-                  <div className="text">
-                    <p>{t("Maydoni")}:</p>
-                    <h2>513.120 KM2</h2>
-                  </div>
-                </div>
-                <div className="box">
-                  <div className="icon">
-                    <AiFillHome />
-                  </div>
-                  <div className="text">
-                    <p>{t("O'rtacha narxi")}:</p>
-                    <h2>$165.450</h2>
                   </div>
                 </div>
 
@@ -251,6 +251,51 @@ export default function App() {
                   <div className="text">
                     <p>{t("O'rtacha narxi")}:</p>
                     <h2>$4.00.200</h2>
+                  </div>
+                </div>
+
+                <button ><a href="#concat">{t("Batafsil ma'lumot")}</a></button>
+              </div>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide className="chiled-swiper">
+          <div className="container">
+            <div className="swiper-text">
+              <p>{t("Go'zal shaharga bir nazar tashlang")}:</p>
+
+              <h1>{t("Saudiya-arab")}</h1>
+
+              <button><a href="#concat">{t("U yerga boring")}</a></button>
+            </div>
+
+            <div className="swiper-more">
+              <div className="boxses">
+                <div className="box">
+                  <div className="icon">
+                    <FaUser />
+                  </div>
+                  <div className="text">
+                    <p>{t("Aholisi")}:</p>
+                    <h2>11.66 M</h2>
+                  </div>
+                </div>
+                <div className="box">
+                  <div className="icon">
+                    <FaGlobe />
+                  </div>
+                  <div className="text">
+                    <p>{t("Maydoni")}:</p>
+                    <h2>21.290 KM2</h2>
+                  </div>
+                </div>
+                <div className="box">
+                  <div className="icon">
+                    <AiFillHome />
+                  </div>
+                  <div className="text">
+                    <p>{t("O'rtacha narxi")}:</p>
+                    <h2>$4200</h2>
                   </div>
                 </div>
 

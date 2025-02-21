@@ -24,7 +24,7 @@ const App = () => {
             className="animate__animated animate__flip"
             style={{
               color: "white",
-              fontSize: "50px",
+              fontSize: "60px",
               fontFamily: "Arial, sans-serif",
             }}
           >

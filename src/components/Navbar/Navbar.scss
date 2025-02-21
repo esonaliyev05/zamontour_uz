@@ -4,7 +4,7 @@ $text-color: #fff;
 .navbar {
   width: 100%;
   height: 70px;
-  background: $bg-color;
+  // background: $bg-color;
   position: fixed;
   z-index: 9;
   transition: all 0.2s linear;
@@ -13,6 +13,10 @@ $text-color: #fff;
 
   &.hidden {
     transform: translateY(-100%);
+  }
+
+  &.scrolled {
+    background-color: $bg-color;
   }
 
   .container {

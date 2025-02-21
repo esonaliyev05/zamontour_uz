@@ -10,31 +10,31 @@ const Toll = () => {
         icon: <TbBorderCorners/>,
         title: 'Dubai',
         population: 'Population: 2M',
-        imageUrl: 'Toll/antalya.jpg'
+        imageUrl: 'HeaderImg/Dubay.jpg'
       },
       {
         icon: <TbBorderCorners/>,
-        title: 'Zhangjiajie',
+        title: 'Antaliya',
         population: '1M',
-        imageUrl: 'Toll/best-05.jpg'
+        imageUrl: 'HeaderImg/photo_2023-05-06_02-50-37.jpg'
       },
       {
         icon: <TbBorderCorners/>,
-        title: 'Hangzhou',
+        title: 'Saudiya-arab',
         population: '3M',
-        imageUrl: 'Toll/dubai.jpg'
+        imageUrl: 'HeaderImg/photo_2025-02-21_16-27-50.jpg'
       },
       {
         icon: <TbBorderCorners/>,
-        title: 'Bamboo Forest',
+        title: 'Turkey',
         population: '500K',
-        imageUrl: 'Toll/istanbul.jpg'
+        imageUrl: 'Main-swiper/photo_2024-11-19_13-05-30.jpg'
       },
       {
         icon: <TbBorderCorners/>,
-        title: 'Bamboo Forest',
+        title: 'India',
         population: '500K',
-        imageUrl: 'Toll/sharm.jpg'
+        imageUrl: 'Main-swiper/photo_2025-02-20_22-05-27.jpg'
       }
     ];
   

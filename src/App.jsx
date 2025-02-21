@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import PulseLoader from 'react-spinners/PulseLoader'; // PulseLoader import qilish
-import Navbar from './components/Navbar/Navbar';
-import Header from './components/Header/Header';
-import Main from './components/Main/Main';
-import Concat from './components/Concat/Concat';
-import Footer from './components/Footer/Footer';
-import "./App.css"
+import React, { useState, useEffect } from "react";
+import PulseLoader from "react-spinners/PulseLoader"; // PulseLoader import qilish
+import Navbar from "./components/Navbar/Navbar";
+import Header from "./components/Header/Header";
+import Main from "./components/Main/Main";
+import Concat from "./components/Concat/Concat";
+import Footer from "./components/Footer/Footer";
+import "./App.css";
 const App = () => {
   const [loading, setLoading] = useState(true); // Loading holatini boshqarish
 
@@ -20,7 +20,18 @@ const App = () => {
     <>
       {loading ? (
         <div className="loader-container">
-          <PulseLoader color="#36d7b7" loading={loading} size={15} />
+          <h1
+            className="animate__animated animate__flip"
+            style={{
+              color: "white",
+              fontSize: "50px",
+              fontFamily: "Arial, sans-serif",
+            }}
+          >
+            Aventour
+          </h1>
+          <br />
+          {/* <PulseLoader color="#36d7b7" loading={loading} size={15} /> */}
         </div>
       ) : (
         <>
@@ -33,16 +44,13 @@ const App = () => {
       )}
     </>
   );
-}
+};
 
 export default App;
 
-
-
-
 // import React, { useState, useEffect } from "react";
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import { RingLoader } from "react-spinners"; 
+// import { RingLoader } from "react-spinners";
 // import Home from "./Pages/Home";
 // import About from "./Pages/About";
 // import Navbar from "./components/Navbar/Navbar";
@@ -50,9 +58,9 @@ export default App;
 
 // function App() {
 //   const [isSidebarOpen, setSidebarOpen] = useState(false);
-//   const [open, setOpen] = useState(false); 
-//   const [loading, setLoading] = useState(true); 
-//   const [contentLoaded, setContentLoaded] = useState(false); 
+//   const [open, setOpen] = useState(false);
+//   const [loading, setLoading] = useState(true);
+//   const [contentLoaded, setContentLoaded] = useState(false);
 
 //   const toggleSidebar = () => {
 //     setSidebarOpen(!isSidebarOpen);
@@ -62,17 +70,17 @@ export default App;
 //   const handleOpen = () => setOpen(true);
 
 //   useEffect(() => {
-  
+
 //     setTimeout(() => {
-//       setLoading(false); 
-//       setContentLoaded(true); 
-//     }, 2000); 
+//       setLoading(false);
+//       setContentLoaded(true);
+//     }, 2000);
 //   }, []);
 
 //   return (
 //     <>
 //       <BrowserRouter>
-//         {loading ? ( 
+//         {loading ? (
 //           <div
 //             className="loader-container"
 //             style={{
@@ -84,7 +92,7 @@ export default App;
 //           >
 //             <RingLoader size={100} color="#991b1b" />
 //           </div>
-//         ) : contentLoaded ? ( 
+//         ) : contentLoaded ? (
 //           <>
 //             <Navbar handleOpen={handleOpen} toggleSidebar={toggleSidebar} />
 //             <Routes>

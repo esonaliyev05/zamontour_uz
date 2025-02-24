@@ -45,18 +45,22 @@ const Navbar = () => {
         </div>
 
         <ul className={open ? "nav-links active" : "nav-links"}>
+            <a href="#">
           <li>
-            <a href="#">{t("Bosh sahifa")}</a>
+          {t("Bosh sahifa")}
           </li>
-          <li>
-            <a href="#about">{t("Biz haqimizda")}</a>
-          </li>
-          <li>
-            <a href="#tours">{t("Turlar")}</a>
-          </li>
-          <li>
-            <a href="#concat">{t("Kontaktlar")}</a>
-          </li>
+            </a>
+            <a href="#about">
+              <li>
+              {t("Biz haqimizda")}
+              </li>
+            </a>
+            <a href="#tours">
+              <li>{t("Turlar")}</li>
+            </a>
+            <a href="#concat">
+              <li>{t("Kontaktlar")}</li>
+            </a>
         </ul>
 
         <div className="nav-concat">
